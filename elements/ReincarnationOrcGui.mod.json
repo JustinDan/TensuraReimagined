@@ -1,0 +1,239 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 167,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "guibordertest.png",
+          "use1Xscale": false,
+          "name": "guibordertest.png",
+          "x": 127,
+          "y": 38
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Select",
+          "onClick": {
+            "name": "OrcSelectRace"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Select",
+          "x": 186,
+          "y": 206
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Orc",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Orc",
+          "x": 204,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Stats",
+          "color": {
+            "value": -16717607,
+            "falpha": 0.0
+          },
+          "name": "Stats",
+          "x": 141,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "- 30 HP",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "- 30 HP",
+          "x": 141,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "- 2.5 Attack Damage",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "- 2.5 Attack Damage",
+          "x": 141,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "- 3.5 Attack Speed",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "- 3.5 Attack Speed",
+          "x": 141,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "- 0.8 Movement Speed",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "- 0.8 Movement Speed",
+          "x": 141,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "- 0.7 Knockback Resistance",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "- 0.7 Knockback Resistance",
+          "x": 141,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Magicule",
+          "color": {
+            "value": -16717607,
+            "falpha": 0.0
+          },
+          "name": "Magicule",
+          "x": 141,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Random: 3,000 to 5,000",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Random: 3,000 to 5,000",
+          "x": 141,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Abilities",
+          "color": {
+            "value": -16717607,
+            "falpha": 0.0
+          },
+          "name": "Abilities",
+          "x": 141,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "- Axes damage x 1.5",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "- Axes damage x 1.5",
+          "x": 141,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Evolutions",
+          "color": {
+            "value": -16717607,
+            "falpha": 0.0
+          },
+          "name": "Evolutions",
+          "x": 141,
+          "y": 161
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "orctemp.png",
+          "use1Xscale": false,
+          "name": "orctemp.png",
+          "x": 239,
+          "y": 60
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "- High Orc/Orc Lord",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "- High Orc/Orc Lord",
+          "x": 141,
+          "y": 170
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<",
+          "onClick": {
+            "name": "FirstGui"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "<",
+          "x": 87,
+          "y": 116
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

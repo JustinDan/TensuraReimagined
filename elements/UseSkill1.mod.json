@@ -1,0 +1,12 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "C",
+    "keyBindingName": "Use Skill 1",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "UseSkill1OnKeyPressed"
+    }
+  }
+}

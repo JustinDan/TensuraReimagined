@@ -1,0 +1,44 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:Magicules>/<VAR:MaxMagicules>",
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "name": "<VAR:Magicules>/<VAR:MaxMagicules>",
+          "x": -3,
+          "y": 224
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Magicules",
+          "color": {
+            "value": -10027009,
+            "falpha": 0.0
+          },
+          "name": "Magicules",
+          "x": 6,
+          "y": 215
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}
