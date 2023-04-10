@@ -1,0 +1,201 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 369,
+    "height": 198,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Unique Skills",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Unique Skills",
+          "x": 33,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Shadow Striker",
+          "width": 98,
+          "height": 20,
+          "name": "Shadow Striker",
+          "x": 42,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Sloth",
+          "width": 51,
+          "height": 20,
+          "name": "Sloth",
+          "x": 159,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Spearhead",
+          "width": 72,
+          "height": 20,
+          "name": "Spearhead",
+          "x": 231,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Starved",
+          "width": 61,
+          "height": 20,
+          "name": "Starved",
+          "x": 321,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Survivor",
+          "width": 67,
+          "height": 20,
+          "name": "Survivor",
+          "x": 42,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "The Chosen One",
+          "width": 98,
+          "height": 20,
+          "name": "The Chosen One",
+          "x": 123,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Traveler",
+          "width": 67,
+          "height": 20,
+          "name": "Traveler",
+          "x": 240,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Usurper",
+          "width": 61,
+          "height": 20,
+          "name": "Usurper",
+          "x": 321,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Wrath",
+          "width": 51,
+          "height": 20,
+          "name": "Wrath",
+          "x": 42,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Previous Page",
+          "onClick": {
+            "name": "BackUSkill2"
+          },
+          "width": 93,
+          "height": 20,
+          "name": "Previous Page",
+          "x": 42,
+          "y": 188
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "1",
+          "onClick": {
+            "name": "SelectSkill1"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "1",
+          "x": 150,
+          "y": 188
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "2",
+          "onClick": {
+            "name": "SelectSkill2"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "2",
+          "x": 204,
+          "y": 188
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "3",
+          "onClick": {
+            "name": "SelectSkill3"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "3",
+          "x": 258,
+          "y": 188
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Clear Skills",
+          "width": 87,
+          "height": 20,
+          "name": "Clear Skills",
+          "x": 339,
+          "y": -1
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

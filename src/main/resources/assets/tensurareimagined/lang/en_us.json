@@ -1,8 +1,11 @@
 {
   "item.tensurareimagined.shlime_spawn_egg": "Shlime Spawn Egg",
+  "item.tensurareimagined.severer_ranged": "Severer Ranged",
   "entity.tensurareimagined.shlime": "Shlime",
   "key.tensurareimagined.use_skill_1": "Use Skill 1",
+  "entity.tensurareimagined.severerbullettest": "Severerbullettest",
   "key.tensurareimagined.skill_menu_open_bind": "Skill Menu Open Bind",
+  "item.tensurareimagined.severerbullettest_spawn_egg": "Severerbullettest Spawn Egg",
   "item.tensurareimagined.proof_sword": "Proof Sword",
   "item.tensurareimagined.magicule_test_stick": "Magicule Test Stick"
 }

@@ -89,6 +89,9 @@
         "type": "button",
         "data": {
           "text": " N/A",
+          "onClick": {
+            "name": "OpenUniqueSkills"
+          },
           "width": 30,
           "height": 20,
           "name": " N/A",
@@ -100,9 +103,6 @@
         "type": "button",
         "data": {
           "text": "n",
-          "onClick": {
-            "name": "OpenUniqueSkills"
-          },
           "width": 30,
           "height": 20,
           "name": "n",

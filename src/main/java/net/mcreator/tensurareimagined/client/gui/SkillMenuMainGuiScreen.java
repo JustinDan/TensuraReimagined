@@ -97,12 +97,12 @@ public class SkillMenuMainGuiScreen extends AbstractContainerScreen<SkillMenuMai
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 		this.addRenderableWidget(new Button(this.leftPos + 240, this.topPos + 133, 30, 20, Component.literal(" N/A"), e -> {
+			if (true) {
+				TensurareimaginedMod.PACKET_HANDLER.sendToServer(new SkillMenuMainGuiButtonMessage(0, x, y, z));
+				SkillMenuMainGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 152, this.topPos + 137, 30, 20, Component.literal("n"), e -> {
-			if (true) {
-				TensurareimaginedMod.PACKET_HANDLER.sendToServer(new SkillMenuMainGuiButtonMessage(1, x, y, z));
-				SkillMenuMainGuiButtonMessage.handleButtonAction(entity, 1, x, y, z);
-			}
 		}));
 	}
 }

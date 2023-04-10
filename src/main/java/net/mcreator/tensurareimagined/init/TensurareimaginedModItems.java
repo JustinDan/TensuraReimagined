@@ -12,6 +12,7 @@ import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 
+import net.mcreator.tensurareimagined.item.SevererRangedItem;
 import net.mcreator.tensurareimagined.item.ProofSwordItem;
 import net.mcreator.tensurareimagined.item.MagiculeTestStickItem;
 import net.mcreator.tensurareimagined.TensurareimaginedMod;
@@ -23,4 +24,5 @@ public class TensurareimaginedModItems {
 					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> PROOF_SWORD = REGISTRY.register("proof_sword", () -> new ProofSwordItem());
 	public static final RegistryObject<Item> MAGICULE_TEST_STICK = REGISTRY.register("magicule_test_stick", () -> new MagiculeTestStickItem());
+	public static final RegistryObject<Item> SEVERER_RANGED = REGISTRY.register("severer_ranged", () -> new SevererRangedItem());
 }

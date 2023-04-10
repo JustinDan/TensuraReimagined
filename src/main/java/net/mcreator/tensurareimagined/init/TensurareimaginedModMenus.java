@@ -11,6 +11,8 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 
 import net.minecraft.world.inventory.MenuType;
 
+import net.mcreator.tensurareimagined.world.inventory.UniqueSkillGuiPage3Menu;
+import net.mcreator.tensurareimagined.world.inventory.UniqueSkillGuiPage2Menu;
 import net.mcreator.tensurareimagined.world.inventory.UniqueSkillGuiMenu;
 import net.mcreator.tensurareimagined.world.inventory.SkillMenuMainGuiMenu;
 import net.mcreator.tensurareimagined.world.inventory.ReincarnationOrcGuiMenu;
@@ -27,4 +29,8 @@ public class TensurareimaginedModMenus {
 			() -> IForgeMenuType.create(SkillMenuMainGuiMenu::new));
 	public static final RegistryObject<MenuType<UniqueSkillGuiMenu>> UNIQUE_SKILL_GUI = REGISTRY.register("unique_skill_gui",
 			() -> IForgeMenuType.create(UniqueSkillGuiMenu::new));
+	public static final RegistryObject<MenuType<UniqueSkillGuiPage2Menu>> UNIQUE_SKILL_GUI_PAGE_2 = REGISTRY.register("unique_skill_gui_page_2",
+			() -> IForgeMenuType.create(UniqueSkillGuiPage2Menu::new));
+	public static final RegistryObject<MenuType<UniqueSkillGuiPage3Menu>> UNIQUE_SKILL_GUI_PAGE_3 = REGISTRY.register("unique_skill_gui_page_3",
+			() -> IForgeMenuType.create(UniqueSkillGuiPage3Menu::new));
 }

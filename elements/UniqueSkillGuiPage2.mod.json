@@ -1,0 +1,295 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 369,
+    "height": 198,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Retaliator",
+          "width": 77,
+          "height": 20,
+          "name": "Retaliator",
+          "x": 132,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Unique Skills",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Unique Skills",
+          "x": 33,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Lust",
+          "width": 46,
+          "height": 20,
+          "name": "Lust",
+          "x": 42,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Manufacturer",
+          "width": 88,
+          "height": 20,
+          "name": "Manufacturer",
+          "x": 105,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Martial Master",
+          "width": 98,
+          "height": 20,
+          "name": "Martial Master",
+          "x": 213,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Mathematician",
+          "width": 93,
+          "height": 20,
+          "name": "Mathematician",
+          "x": 42,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Merciless",
+          "width": 72,
+          "height": 20,
+          "name": "Merciless",
+          "x": 150,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Pride",
+          "width": 51,
+          "height": 20,
+          "name": "Pride",
+          "x": 330,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Musician",
+          "width": 67,
+          "height": 20,
+          "name": "Musician",
+          "x": 240,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Opressor",
+          "width": 67,
+          "height": 20,
+          "name": "Opressor",
+          "x": 321,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Perciever",
+          "width": 72,
+          "height": 20,
+          "name": "Perciever",
+          "x": 42,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Planner",
+          "width": 61,
+          "height": 20,
+          "name": "Planner",
+          "x": 132,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Predator",
+          "width": 67,
+          "height": 20,
+          "name": "Predator",
+          "x": 213,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Puppeteer",
+          "width": 72,
+          "height": 20,
+          "name": "Puppeteer",
+          "x": 303,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Researcher",
+          "width": 77,
+          "height": 20,
+          "name": "Researcher",
+          "x": 42,
+          "y": 152
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Ruler",
+          "width": 51,
+          "height": 20,
+          "name": "Ruler",
+          "x": 231,
+          "y": 152
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Severer",
+          "onClick": {
+            "name": "SelectSeverer"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Severer",
+          "x": 303,
+          "y": 152
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next Page",
+          "onClick": {
+            "name": "OpenUSkill3"
+          },
+          "width": 72,
+          "height": 20,
+          "name": "Next Page",
+          "x": 312,
+          "y": 188
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Previous Page",
+          "onClick": {
+            "name": "BackUSkill1"
+          },
+          "width": 93,
+          "height": 20,
+          "name": "Previous Page",
+          "x": 42,
+          "y": 188
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "1",
+          "onClick": {
+            "name": "SelectSkill1"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "1",
+          "x": 150,
+          "y": 188
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "2",
+          "onClick": {
+            "name": "SelectSkill2"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "2",
+          "x": 204,
+          "y": 188
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "3",
+          "onClick": {
+            "name": "SelectSkill3"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "3",
+          "x": 258,
+          "y": 188
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Clear Skills",
+          "width": 87,
+          "height": 20,
+          "name": "Clear Skills",
+          "x": 339,
+          "y": -1
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

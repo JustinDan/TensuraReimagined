@@ -12,7 +12,10 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.tensurareimagined.world.inventory.UniqueSkillGuiMenu;
-import net.mcreator.tensurareimagined.procedures.SelectSevererSkillProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectSkill3Procedure;
+import net.mcreator.tensurareimagined.procedures.SelectSkill2Procedure;
+import net.mcreator.tensurareimagined.procedures.SelectSkill1Procedure;
+import net.mcreator.tensurareimagined.procedures.OpenUSkill2Procedure;
 import net.mcreator.tensurareimagined.TensurareimaginedMod;
 
 import java.util.function.Supplier;
@@ -62,9 +65,21 @@ public class UniqueSkillGuiButtonMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-		if (buttonID == 0) {
+		if (buttonID == 15) {
 
-			SelectSevererSkillProcedure.execute(entity);
+			OpenUSkill2Procedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 16) {
+
+			SelectSkill1Procedure.execute(entity);
+		}
+		if (buttonID == 17) {
+
+			SelectSkill2Procedure.execute(entity);
+		}
+		if (buttonID == 18) {
+
+			SelectSkill3Procedure.execute(entity);
 		}
 	}
 

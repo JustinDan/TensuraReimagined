@@ -58,6 +58,14 @@ public class HumanSelectRaceProcedure {
 						});
 					}
 				});
+				{
+					double _setval = (entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new TensurareimaginedModVariables.PlayerVariables())).MaxMagicules;
+					entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.Magicules = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 			}
 			OrcEffectsProcedure.execute(entity);
 		}

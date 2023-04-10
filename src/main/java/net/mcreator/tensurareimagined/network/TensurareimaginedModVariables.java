@@ -81,6 +81,7 @@ public class TensurareimaginedModVariables {
 			clone.Skill1 = original.Skill1;
 			clone.Skill2 = original.Skill2;
 			clone.Skill3 = original.Skill3;
+			clone.SkillSelect = original.SkillSelect;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -126,6 +127,7 @@ public class TensurareimaginedModVariables {
 		public String Skill1 = "None";
 		public String Skill2 = "None";
 		public String Skill3 = "None";
+		public double SkillSelect = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -143,6 +145,7 @@ public class TensurareimaginedModVariables {
 			nbt.putString("Skill1", Skill1);
 			nbt.putString("Skill2", Skill2);
 			nbt.putString("Skill3", Skill3);
+			nbt.putDouble("SkillSelect", SkillSelect);
 			return nbt;
 		}
 
@@ -157,6 +160,7 @@ public class TensurareimaginedModVariables {
 			Skill1 = nbt.getString("Skill1");
 			Skill2 = nbt.getString("Skill2");
 			Skill3 = nbt.getString("Skill3");
+			SkillSelect = nbt.getDouble("SkillSelect");
 		}
 	}
 
@@ -191,6 +195,7 @@ public class TensurareimaginedModVariables {
 					variables.Skill1 = message.data.Skill1;
 					variables.Skill2 = message.data.Skill2;
 					variables.Skill3 = message.data.Skill3;
+					variables.SkillSelect = message.data.SkillSelect;
 				}
 			});
 			context.setPacketHandled(true);

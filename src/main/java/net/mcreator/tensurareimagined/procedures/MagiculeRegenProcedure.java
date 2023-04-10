@@ -36,7 +36,7 @@ public class MagiculeRegenProcedure {
 			TensurareimaginedMod.queueServerWork(1, () -> {
 				{
 					double _setval = (entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new TensurareimaginedModVariables.PlayerVariables())).Magicules + 1;
+							.orElse(new TensurareimaginedModVariables.PlayerVariables())).Magicules + 0.3;
 					entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.Magicules = _setval;
 						capability.syncPlayerVariables(entity);

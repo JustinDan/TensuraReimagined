@@ -1,45 +1,23 @@
 {
-  "minecraft:recipes/misc/iron_nugget_from_blasting": {
+  "minecraft:adventure/root": {
     "criteria": {
-      "has_iron_sword": "2023-04-07 12:47:02 -0400"
+      "killed_something": "2023-04-09 21:03:28 -0400"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/chest": {
+  "minecraft:adventure/shoot_arrow": {
     "criteria": {
-      "has_lots_of_items": "2023-04-07 12:47:09 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/gold_nugget_from_smelting": {
-    "criteria": {
-      "has_golden_sword": "2023-04-07 12:47:01 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/iron_nugget_from_smelting": {
-    "criteria": {
-      "has_iron_sword": "2023-04-07 12:47:02 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/gold_nugget_from_blasting": {
-    "criteria": {
-      "has_golden_sword": "2023-04-07 12:47:01 -0400"
+      "shot_arrow": "2023-04-09 21:03:27 -0400"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:plains": "2023-04-07 12:46:47 -0400"
+      "minecraft:birch_forest": "2023-04-09 21:02:56 -0400",
+      "minecraft:forest": "2023-04-09 21:02:30 -0400",
+      "minecraft:old_growth_birch_forest": "2023-04-09 21:02:54 -0400"
     },
     "done": false
-  },
-  "minecraft:nether/netherite_armor": {
-    "criteria": {
-      "netherite_armor": "2023-04-07 12:46:59 -0400"
-    },
-    "done": true
   },
   "DataVersion": 3120
 }
