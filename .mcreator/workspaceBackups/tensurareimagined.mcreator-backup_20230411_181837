@@ -106,7 +106,7 @@
           }
         ]
       },
-      "path": "~/Race Effects"
+      "path": "~/Races/Race Effects"
     },
     {
       "name": "OrcSelectRace",
@@ -1836,6 +1836,342 @@
         ]
       },
       "path": "~/Races"
+    },
+    {
+      "name": "OpenGoblinRace",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_goblin_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/OpenGoblinRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "OpenLizardmanRace",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_lizardman_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/OpenLizardmanRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "OpenLesserDemonRace",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_lesser_demon_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/OpenLesserDemonRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "OpenVampireRace",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_vampire_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/OpenVampireRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "OpenSlimeRace",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_slime_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/OpenSlimeRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "OpenWightRace",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_wight_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/OpenWightRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "GoblinSelectRace",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goblin_select_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/GoblinSelectRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "LizardmanSelectRace",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lizardman_select_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/LizardmanSelectRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "LesserDemonSelectRace",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lesser_demon_select_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/LesserDemonSelectRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "VampireSelectRace",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampire_select_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/VampireSelectRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "SlimeSelectRace",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slime_select_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SlimeSelectRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
     }
   ],
   "variable_elements": [
@@ -1904,14 +2240,14 @@
   "language_map": {
     "en_us": {
       "gui.tensurareimagined.reincarnation_lesser_demon.button_empty": "\u003c",
-      "gui.tensurareimagined.reincarnation_slime.label_orc": "Orc",
-      "gui.tensurareimagined.reincarnation_wight.label_08_movement_speed": "- 0.8 Movement Speed",
+      "gui.tensurareimagined.reincarnation_wight.label_08_movement_speed": "- Sun-weak wihout helmet",
+      "gui.tensurareimagined.reincarnation_slime.label_orc": "Slime",
       "gui.tensurareimagined.reincarnationhuman_gui.label_1_attack_damage": "- 1 Attack Damage",
       "gui.tensurareimagined.reincarnation_lesser_demon.label_magicule": "Magicule",
-      "gui.tensurareimagined.reincarnation_vampire.label_25_attack_damage": "- 2.5 Attack Damage",
-      "gui.tensurareimagined.reincarnation_vampire.label_07_knockback_resistance": "- 0.7 Knockback Resistance",
+      "gui.tensurareimagined.reincarnation_vampire.label_25_attack_damage": "- 2 Attack Damage",
+      "gui.tensurareimagined.reincarnation_vampire.label_07_knockback_resistance": "- Skill: Vampirism",
       "gui.tensurareimagined.skill_menu_main_gui.label_varrace": "\u003cVAR:Race\u003e",
-      "gui.tensurareimagined.reincarnation_slime.label_abilities": "Abilities",
+      "gui.tensurareimagined.reincarnation_slime.label_abilities": "Intrinsic Abilities",
       "gui.tensurareimagined.reincarnation_orc_gui.label_high_orcorc_lord": "- High Orc/Orc Lord",
       "gui.tensurareimagined.unique_skill_gui_page_2.button_puppeteer": "Puppeteer",
       "gui.tensurareimagined.reincarnation_goblin.label_35_attack_speed": "- 0.15 Movement Speed",
@@ -1929,22 +2265,23 @@
       "entity.tensurareimagined.severerbullettest": "Severerbullettest",
       "gui.tensurareimagined.unique_skill_gui_page_2.label_unique_skills": "Unique Skills",
       "gui.tensurareimagined.reincarnation_lesser_demon.label_orc": "Lesser Demon",
+      "gui.tensurareimagined.reincarnation_slime.button_empty1": "\u003e",
       "gui.tensurareimagined.reincarnation_lesser_demon.label_high_orcorc_lord": "- Skill: Magic Sense",
       "gui.tensurareimagined.unique_skill_gui_page_3.button_starved": "Starved",
       "gui.tensurareimagined.reincarnation_goblin.label_orc": "Goblin",
       "gui.tensurareimagined.reincarnation_lizardman.label_random_3000_to_5000": "Random: 6,000 to 8,000",
-      "gui.tensurareimagined.reincarnation_vampire.label_axes_damage_x_15": "- Axes damage x 1.5",
-      "gui.tensurareimagined.reincarnation_slime.label_30_hp": "- 30 HP",
-      "gui.tensurareimagined.reincarnation_wight.label_35_attack_speed": "- 3.5 Attack Speed",
+      "gui.tensurareimagined.reincarnation_vampire.label_axes_damage_x_15": "Suck blood from meat in hand",
+      "gui.tensurareimagined.reincarnation_slime.label_30_hp": "- 12 HP",
+      "gui.tensurareimagined.reincarnation_wight.label_35_attack_speed": "- Magicule Boost II",
       "gui.tensurareimagined.reincarnationhuman_gui.button_select": "Select",
       "gui.tensurareimagined.unique_skill_gui_page_2.button_manufacturer": "Manufacturer",
       "key.tensurareimagined.use_skill_1": "Use Skill 1",
-      "gui.tensurareimagined.reincarnation_wight.label_orc": "Orc",
+      "gui.tensurareimagined.reincarnation_wight.label_orc": "Wight",
       "gui.tensurareimagined.reincarnation_orc_gui.label_08_movement_speed": "- 0.8 Movement Speed",
-      "gui.tensurareimagined.reincarnation_slime.label_08_movement_speed": "- 0.8 Movement Speed",
+      "gui.tensurareimagined.reincarnation_slime.label_08_movement_speed": "- Self-Regeneration",
       "gui.tensurareimagined.unique_skill_gui_page_2.button_planner": "Planner",
       "gui.tensurareimagined.reincarnationhuman_gui.label_human": "Human",
-      "gui.tensurareimagined.reincarnation_slime.label_25_attack_damage": "- 2.5 Attack Damage",
+      "gui.tensurareimagined.reincarnation_slime.label_25_attack_damage": "- 0.3 Attack Damage",
       "gui.tensurareimagined.unique_skill_gui_page_2.button_martial_master": "Martial Master",
       "gui.tensurareimagined.unique_skill_gui_page_2.button_clear_skills": "Clear Skills",
       "gui.tensurareimagined.reincarnation_lizardman.label_30_hp": "- 24 HP",
@@ -1961,13 +2298,14 @@
       "gui.tensurareimagined.reincarnation_slime.label_evolutions": "Evolutions",
       "item.tensurareimagined.severerbullettest_spawn_egg": "Severerbullettest Spawn Egg",
       "gui.tensurareimagined.reincarnationhuman_gui.label_20_hp": "- 20 HP",
+      "gui.tensurareimagined.reincarnation_vampire.button_empty1": "\u003e",
       "gui.tensurareimagined.unique_skill_gui.button_greed": "Greed",
       "gui.tensurareimagined.reincarnation_wight.label_stats": "Stats",
       "gui.tensurareimagined.magicules_overlay.label_magicules": "Magicules",
       "gui.tensurareimagined.reincarnation_slime.button_empty": "\u003c",
       "gui.tensurareimagined.unique_skill_gui_page_2.button_researcher": "Researcher",
       "item.tensurareimagined.shlime_spawn_egg": "Shlime Spawn Egg",
-      "gui.tensurareimagined.reincarnation_wight.label_30_hp": "- 30 HP",
+      "gui.tensurareimagined.reincarnation_wight.label_30_hp": "- 20 HP",
       "item.tensurareimagined.severer_ranged": "Severer Ranged",
       "gui.tensurareimagined.reincarnation_lesser_demon.label_08_movement_speed": "- Night Vision",
       "gui.tensurareimagined.reincarnation_vampire.button_select": "Select",
@@ -1975,7 +2313,7 @@
       "gui.tensurareimagined.unique_skill_gui.label_unique_skills": "Unique Skills",
       "gui.tensurareimagined.reincarnation_lizardman.label_evolutions": "Evolutions",
       "gui.tensurareimagined.unique_skill_gui.button_healer": "Healer",
-      "gui.tensurareimagined.reincarnation_vampire.label_orc": "Orc",
+      "gui.tensurareimagined.reincarnation_vampire.label_orc": "Vampire",
       "gui.tensurareimagined.reincarnationhuman_gui.label_magicule": "Magicule",
       "gui.tensurareimagined.unique_skill_gui_page_2.button_merciless": "Merciless",
       "gui.tensurareimagined.reincarnation_orc_gui.label_30_hp": "- 30 HP",
@@ -1983,12 +2321,14 @@
       "gui.tensurareimagined.unique_skill_gui_page_2.button_previous_page": "Previous Page",
       "gui.tensurareimagined.unique_skill_gui_page_2.button_lust": "Lust",
       "gui.tensurareimagined.reincarnation_goblin.label_evolutions": "Evolutions",
-      "gui.tensurareimagined.reincarnation_vampire.label_random_3000_to_5000": "Random: 3,000 to 5,000",
+      "gui.tensurareimagined.reincarnation_vampire.label_random_3000_to_5000": "- No natural regeneration",
       "gui.tensurareimagined.unique_skill_gui.button_lions_heart": "Lion\u0027s Heart",
       "gui.tensurareimagined.reincarnation_orc_gui.button_empty": "\u003c",
       "gui.tensurareimagined.reincarnation_lesser_demon.label_abilities": "Abilities",
       "gui.tensurareimagined.reincarnation_goblin.label_08_movement_speed": "Goblin - Hobgoblin - Ogre...",
-      "gui.tensurareimagined.reincarnation_slime.label_35_attack_speed": "- 3.5 Attack Speed",
+      "gui.tensurareimagined.reincarnation_wight.label_75_to_lifesteal": "- 75% to Life-steal",
+      "gui.tensurareimagined.reincarnation_slime.label_stomach_9x9_storage": "- Stomach: 9x9 Storage",
+      "gui.tensurareimagined.reincarnation_slime.label_35_attack_speed": "- No Fall Damage",
       "gui.tensurareimagined.reincarnation_goblin.label_axes_damage_x_15": "- Spawn with 3 Goblins",
       "gui.tensurareimagined.unique_skill_gui_page_3.button_wrath": "Wrath",
       "gui.tensurareimagined.reincarnation_lizardman.button_empty": "\u003c",
@@ -2001,13 +2341,14 @@
       "gui.tensurareimagined.unique_skill_gui_page_3.button_3": "3",
       "gui.tensurareimagined.unique_skill_gui_page_3.button_1": "1",
       "gui.tensurareimagined.reincarnation_orc_gui.label_stats": "Stats",
-      "gui.tensurareimagined.reincarnation_slime.label_high_orcorc_lord": "- High Orc/Orc Lord",
+      "gui.tensurareimagined.reincarnation_slime.label_high_orcorc_lord": "- Jump Boost II",
       "gui.tensurareimagined.unique_skill_gui_page_2.button_mathematician": "Mathematician",
       "gui.tensurareimagined.unique_skill_gui_page_3.label_unique_skills": "Unique Skills",
       "gui.tensurareimagined.reincarnation_goblin.label_abilities": "Abilities",
       "gui.tensurareimagined.reincarnation_lesser_demon.label_axes_damage_x_15": "- Spawn in the Spirit World",
       "gui.tensurareimagined.unique_skill_gui.button_degenerate": "Degenerate",
-      "gui.tensurareimagined.reincarnation_vampire.label_35_attack_speed": "- 3.5 Attack Speed",
+      "gui.tensurareimagined.reincarnation_wight.label_dont_regenerate_naturally": "- Don\u0027t regenerate naturally",
+      "gui.tensurareimagined.reincarnation_vampire.label_35_attack_speed": "Heal by Skills/Race Key",
       "gui.tensurareimagined.unique_skill_gui.button_great_sage": "Great Sage",
       "gui.tensurareimagined.reincarnation_goblin.label_chance_to_evolve_skills": "chance to evolve Skills",
       "gui.tensurareimagined.reincarnation_goblin.label_magicule": "Magicule",
@@ -2031,7 +2372,7 @@
       "gui.tensurareimagined.reincarnationhuman_gui.label_0_armor_point": "- 0 Armor Point",
       "gui.tensurareimagined.reincarnation_goblin.label_30_hp": "- 10 HP",
       "gui.tensurareimagined.reincarnation_slime.button_select": "Select",
-      "gui.tensurareimagined.reincarnation_wight.label_axes_damage_x_15": "- Axes damage x 1.5",
+      "gui.tensurareimagined.reincarnation_wight.label_axes_damage_x_15": "- Immune to some potions",
       "gui.tensurareimagined.reincarnation_lizardman.label_08_movement_speed": "- x1.5 Spear Attack",
       "gui.tensurareimagined.reincarnation_lizardman.label_stats": "Stats",
       "gui.tensurareimagined.reincarnation_vampire.label_magicule": "Magicule",
@@ -2042,18 +2383,19 @@
       "gui.tensurareimagined.reincarnation_lizardman.label_axes_damage_x_15": "- Move faster in Rain/Water",
       "gui.tensurareimagined.reincarnation_lizardman.label_07_knockback_resistance": "- x1.75 Trident Attack",
       "gui.tensurareimagined.unique_skill_gui_page_2.button_opressor": "Opressor",
-      "gui.tensurareimagined.reincarnation_vampire.label_high_orcorc_lord": "- High Orc/Orc Lord",
+      "gui.tensurareimagined.reincarnation_vampire.label_high_orcorc_lord": "- Weak under the sunlight",
       "gui.tensurareimagined.unique_skill_gui_page_3.button_shadow_striker": "Shadow Striker",
       "gui.tensurareimagined.reincarnationhuman_gui.label_stats": "Stats",
       "gui.tensurareimagined.reincarnation_lesser_demon.label_only_20_mins_in_overworld": "Only 20 mins in overworld",
       "gui.tensurareimagined.reincarnationhuman_gui.label_by_spirits": "by Spirits",
       "gui.tensurareimagined.unique_skill_gui_page_3.button_traveler": "Traveler",
       "gui.tensurareimagined.reincarnationhuman_gui.label_01_movement_speed": "- 0.1 Movement Speed",
-      "gui.tensurareimagined.reincarnation_slime.label_random_3000_to_5000": "Random: 3,000 to 5,000",
-      "gui.tensurareimagined.reincarnation_wight.label_random_3000_to_5000": "Random: 3,000 to 5,000",
+      "gui.tensurareimagined.reincarnation_slime.label_random_3000_to_5000": "Random: 2,000 to 6,000",
+      "gui.tensurareimagined.reincarnation_wight.label_random_3000_to_5000": "Random: 7,000 to 20,000",
       "gui.tensurareimagined.unique_skill_gui.button_dilettante": "Dilettante",
       "gui.tensurareimagined.skill_menu_main_gui.button_na": " N/A",
       "gui.tensurareimagined.reincarnation_lesser_demon.label_random_3000_to_5000": "Random: 10,000 to 15,000",
+      "gui.tensurareimagined.reincarnation_vampire.label_race_key_sneak_bat_mode": "- Race Key: Sneak - Bat mode",
       "gui.tensurareimagined.unique_skill_gui.button_envy": "Envy",
       "gui.tensurareimagined.reincarnation_vampire.label_evolutions": "Evolutions",
       "gui.tensurareimagined.reincarnation_wight.label_evolutions": "Evolutions",
@@ -2062,7 +2404,7 @@
       "gui.tensurareimagined.reincarnation_orc_gui.label_35_attack_speed": "- 3.5 Attack Speed",
       "gui.tensurareimagined.unique_skill_gui_page_3.button_sloth": "Sloth",
       "gui.tensurareimagined.reincarnation_vampire.button_empty": "\u003c",
-      "gui.tensurareimagined.reincarnation_slime.label_axes_damage_x_15": "- Axes damage x 1.5",
+      "gui.tensurareimagined.reincarnation_slime.label_axes_damage_x_15": "- Absorb And Dissolve",
       "gui.tensurareimagined.reincarnation_vampire.label_stats": "Stats",
       "gui.tensurareimagined.reincarnation_lesser_demon.button_empty1": "\u003e",
       "gui.tensurareimagined.unique_skill_gui_page_2.button_ruler": "Ruler",
@@ -2070,7 +2412,7 @@
       "gui.tensurareimagined.unique_skill_gui.button_2": "2",
       "gui.tensurareimagined.unique_skill_gui.button_3": "3",
       "gui.tensurareimagined.unique_skill_gui.button_1": "1",
-      "gui.tensurareimagined.reincarnation_vampire.label_08_movement_speed": "- 0.8 Movement Speed",
+      "gui.tensurareimagined.reincarnation_vampire.label_08_movement_speed": "Random: 10,000 to 15,000",
       "gui.tensurareimagined.skill_menu_main_gui.button_n": "n",
       "gui.tensurareimagined.reincarnation_lesser_demon.button_select": "Select",
       "gui.tensurareimagined.unique_skill_gui_page_3.button_the_chosen_one": "The Chosen One",
@@ -2080,7 +2422,7 @@
       "gui.tensurareimagined.reincarnation_goblin.label_stats": "Stats",
       "gui.tensurareimagined.reincarnation_orc_gui.label_random_3000_to_5000": "Random: 3,000 to 5,000",
       "gui.tensurareimagined.skillbar.label_varskill1": "\u003cVAR:Skill1\u003e",
-      "gui.tensurareimagined.reincarnation_wight.label_25_attack_damage": "- 2.5 Attack Damage",
+      "gui.tensurareimagined.reincarnation_wight.label_25_attack_damage": "- 0.5 Attack Damage",
       "gui.tensurareimagined.skillbar.label_varskill3": "\u003cVAR:Skill3\u003e",
       "gui.tensurareimagined.reincarnationhuman_gui.label_0_knockback_resistance": "- 0 Knockback Resistance",
       "gui.tensurareimagined.unique_skill_gui_page_2.button_predator": "Predator",
@@ -2091,18 +2433,18 @@
       "gui.tensurareimagined.reincarnation_orc_gui.label_07_knockback_resistance": "- 0.7 Knockback Resistance",
       "gui.tensurareimagined.unique_skill_gui.button_godly_craftsman": "Godly Craftsman",
       "gui.tensurareimagined.reincarnation_lizardman.label_high_orcorc_lord": "- Dragonewt",
-      "gui.tensurareimagined.reincarnation_wight.label_07_knockback_resistance": "- 0.7 Knockback Resistance",
+      "gui.tensurareimagined.reincarnation_wight.label_07_knockback_resistance": "- Weak against Mithril/Smite",
       "gui.tensurareimagined.reincarnation_lesser_demon.label_35_attack_speed": "- Flight",
       "gui.tensurareimagined.reincarnation_goblin.button_empty1": "\u003e",
-      "gui.tensurareimagined.reincarnation_wight.label_high_orcorc_lord": "- High Orc/Orc Lord",
+      "gui.tensurareimagined.reincarnation_wight.label_high_orcorc_lord": "- x2 Bow/Crossbow Damage",
       "gui.tensurareimagined.unique_skill_gui.button_analyst": "Analyst",
       "gui.tensurareimagined.reincarnation_orc_gui.button_select": "Select",
       "gui.tensurareimagined.reincarnation_wight.button_select": "Select",
       "gui.tensurareimagined.unique_skill_gui.button_great_wiseman": "Great Wiseman",
-      "gui.tensurareimagined.reincarnation_slime.label_07_knockback_resistance": "- 0.7 Knockback Resistance",
+      "gui.tensurareimagined.reincarnation_slime.label_07_knockback_resistance": "No hunger + No drowning",
       "gui.tensurareimagined.unique_skill_gui_page_2.button_severer": "Severer",
       "gui.tensurareimagined.unique_skill_gui_page_2.button_next_page": "Next Page",
-      "gui.tensurareimagined.reincarnation_vampire.label_30_hp": "- 30 HP",
+      "gui.tensurareimagined.reincarnation_vampire.label_30_hp": "- 40 HP",
       "gui.tensurareimagined.skill_menu_main_gui.label_race": "Race:",
       "gui.tensurareimagined.unique_skill_gui_page_3.button_previous_page": "Previous Page",
       "gui.tensurareimagined.unique_skill_gui.button_investigator": "Investigator",
@@ -2128,11 +2470,12 @@
       },
       {
         "name": "Races",
-        "children": []
-      },
-      {
-        "name": "Race Effects",
-        "children": []
+        "children": [
+          {
+            "name": "Race Effects",
+            "children": []
+          }
+        ]
       },
       {
         "name": "GUI Procedures",
