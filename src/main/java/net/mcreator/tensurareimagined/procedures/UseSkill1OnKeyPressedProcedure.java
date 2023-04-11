@@ -12,8 +12,7 @@ public class UseSkill1OnKeyPressedProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (((entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new TensurareimaginedModVariables.PlayerVariables())).Skill1).equals("Severer")) {
+		if (((entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TensurareimaginedModVariables.PlayerVariables())).Skill1).equals("Severer")) {
 			{
 				Entity _shootFrom = entity;
 				Level projectileLevel = _shootFrom.level;
@@ -25,8 +24,7 @@ public class UseSkill1OnKeyPressedProcedure {
 				}
 			}
 			{
-				double _setval = (entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new TensurareimaginedModVariables.PlayerVariables())).Magicules - 25;
+				double _setval = (entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TensurareimaginedModVariables.PlayerVariables())).Magicules - 25;
 				entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.Magicules = _setval;
 					capability.syncPlayerVariables(entity);

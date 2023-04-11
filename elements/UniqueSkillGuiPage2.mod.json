@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,10 +13,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_retaliator",
           "text": "Retaliator",
+          "onClick": {
+            "name": "SelectRetaliator"
+          },
           "width": 77,
           "height": 20,
-          "name": "Retaliator",
           "x": 132,
           "y": 152
         }
@@ -24,12 +27,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Unique Skills",
+          "name": "label_unique_skills",
+          "text": {
+            "fixedValue": "Unique Skills"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Unique Skills",
           "x": 33,
           "y": 26
         }
@@ -37,10 +42,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_lust",
           "text": "Lust",
+          "onClick": {
+            "name": "SelectLust"
+          },
           "width": 46,
           "height": 20,
-          "name": "Lust",
           "x": 42,
           "y": 44
         }
@@ -48,10 +56,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_manufacturer",
           "text": "Manufacturer",
+          "onClick": {
+            "name": "SelectManufacturer"
+          },
           "width": 88,
           "height": 20,
-          "name": "Manufacturer",
           "x": 105,
           "y": 44
         }
@@ -59,10 +70,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_martial_master",
           "text": "Martial Master",
+          "onClick": {
+            "name": "SelectMartialMaster"
+          },
           "width": 98,
           "height": 20,
-          "name": "Martial Master",
           "x": 213,
           "y": 44
         }
@@ -70,10 +84,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_mathematician",
           "text": "Mathematician",
+          "onClick": {
+            "name": "SelectMathematician"
+          },
           "width": 93,
           "height": 20,
-          "name": "Mathematician",
           "x": 42,
           "y": 80
         }
@@ -81,10 +98,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_merciless",
           "text": "Merciless",
+          "onClick": {
+            "name": "SelectMerciless"
+          },
           "width": 72,
           "height": 20,
-          "name": "Merciless",
           "x": 150,
           "y": 80
         }
@@ -92,10 +112,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_pride",
           "text": "Pride",
+          "onClick": {
+            "name": "SelectPride"
+          },
           "width": 51,
           "height": 20,
-          "name": "Pride",
           "x": 330,
           "y": 44
         }
@@ -103,10 +126,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_musician",
           "text": "Musician",
+          "onClick": {
+            "name": "SelectMusician"
+          },
           "width": 67,
           "height": 20,
-          "name": "Musician",
           "x": 240,
           "y": 80
         }
@@ -114,10 +140,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_opressor",
           "text": "Opressor",
+          "onClick": {
+            "name": "SelectOppressor"
+          },
           "width": 67,
           "height": 20,
-          "name": "Opressor",
           "x": 321,
           "y": 80
         }
@@ -125,10 +154,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_perciever",
           "text": "Perciever",
+          "onClick": {
+            "name": "SelectPerceiver"
+          },
           "width": 72,
           "height": 20,
-          "name": "Perciever",
           "x": 42,
           "y": 116
         }
@@ -136,10 +168,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_planner",
           "text": "Planner",
+          "onClick": {
+            "name": "SelectPlanner"
+          },
           "width": 61,
           "height": 20,
-          "name": "Planner",
           "x": 132,
           "y": 116
         }
@@ -147,10 +182,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_predator",
           "text": "Predator",
+          "onClick": {
+            "name": "SelectPredator"
+          },
           "width": 67,
           "height": 20,
-          "name": "Predator",
           "x": 213,
           "y": 116
         }
@@ -158,10 +196,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_puppeteer",
           "text": "Puppeteer",
+          "onClick": {
+            "name": "SelectPuppeteer"
+          },
           "width": 72,
           "height": 20,
-          "name": "Puppeteer",
           "x": 303,
           "y": 116
         }
@@ -169,10 +210,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_researcher",
           "text": "Researcher",
+          "onClick": {
+            "name": "SelectResearcher"
+          },
           "width": 77,
           "height": 20,
-          "name": "Researcher",
           "x": 42,
           "y": 152
         }
@@ -180,10 +224,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_ruler",
           "text": "Ruler",
+          "onClick": {
+            "name": "SelectRuler"
+          },
           "width": 51,
           "height": 20,
-          "name": "Ruler",
           "x": 231,
           "y": 152
         }
@@ -191,13 +238,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_severer",
           "text": "Severer",
           "onClick": {
             "name": "SelectSeverer"
           },
           "width": 61,
           "height": 20,
-          "name": "Severer",
           "x": 303,
           "y": 152
         }
@@ -205,13 +252,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_next_page",
           "text": "Next Page",
           "onClick": {
             "name": "OpenUSkill3"
           },
           "width": 72,
           "height": 20,
-          "name": "Next Page",
           "x": 312,
           "y": 188
         }
@@ -219,13 +266,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_previous_page",
           "text": "Previous Page",
           "onClick": {
             "name": "BackUSkill1"
           },
           "width": 93,
           "height": 20,
-          "name": "Previous Page",
           "x": 42,
           "y": 188
         }
@@ -233,13 +280,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_1",
           "text": "1",
           "onClick": {
             "name": "SelectSkill1"
           },
           "width": 30,
           "height": 20,
-          "name": "1",
           "x": 150,
           "y": 188
         }
@@ -247,13 +294,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_2",
           "text": "2",
           "onClick": {
             "name": "SelectSkill2"
           },
           "width": 30,
           "height": 20,
-          "name": "2",
           "x": 204,
           "y": 188
         }
@@ -261,13 +308,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_3",
           "text": "3",
           "onClick": {
             "name": "SelectSkill3"
           },
           "width": 30,
           "height": 20,
-          "name": "3",
           "x": 258,
           "y": 188
         }
@@ -275,10 +322,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_clear_skills",
           "text": "Clear Skills",
+          "onClick": {
+            "name": "ClearSkillsButton"
+          },
           "width": 87,
           "height": 20,
-          "name": "Clear Skills",
           "x": 339,
           "y": -1
         }

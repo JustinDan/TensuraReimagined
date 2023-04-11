@@ -29,14 +29,11 @@ public class MagiculeRegenProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new TensurareimaginedModVariables.PlayerVariables())).Magicules < (entity
-						.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new TensurareimaginedModVariables.PlayerVariables())).MaxMagicules) {
+		if ((entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TensurareimaginedModVariables.PlayerVariables())).Magicules < (entity
+				.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TensurareimaginedModVariables.PlayerVariables())).MaxMagicules) {
 			TensurareimaginedMod.queueServerWork(1, () -> {
 				{
-					double _setval = (entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new TensurareimaginedModVariables.PlayerVariables())).Magicules + 0.3;
+					double _setval = (entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TensurareimaginedModVariables.PlayerVariables())).Magicules + 0.3;
 					entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.Magicules = _setval;
 						capability.syncPlayerVariables(entity);

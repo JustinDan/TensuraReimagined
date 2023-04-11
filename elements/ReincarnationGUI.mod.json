@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,13 +13,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty",
           "text": ">",
           "onClick": {
             "name": "OpenOrcGui"
           },
           "width": 30,
           "height": 20,
-          "name": ">",
           "x": 311,
           "y": 114
         }
@@ -29,7 +29,6 @@
         "data": {
           "image": "guibordertest.png",
           "use1Xscale": false,
-          "name": "guibordertest.png",
           "x": 127,
           "y": 38
         }
@@ -39,7 +38,6 @@
         "data": {
           "image": "fotor_2023-4-7_14_42_59.png",
           "use1Xscale": false,
-          "name": "fotor_2023-4-7_14_42_59.png",
           "x": 249,
           "y": 53
         }
@@ -47,13 +45,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_select",
           "text": "Select",
           "onClick": {
             "name": "HumanSelectRace"
           },
           "width": 56,
           "height": 20,
-          "name": "Select",
           "x": 186,
           "y": 206
         }
@@ -61,12 +59,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Human",
+          "name": "label_human",
+          "text": {
+            "fixedValue": "Human"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "Human",
           "x": 195,
           "y": 62
         }
@@ -74,12 +74,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Stats",
+          "name": "label_stats",
+          "text": {
+            "fixedValue": "Stats"
+          },
           "color": {
             "value": -16717607,
             "falpha": 0.0
           },
-          "name": "Stats",
           "x": 141,
           "y": 71
         }
@@ -87,12 +89,14 @@
       {
         "type": "label",
         "data": {
-          "text": "- 20 HP",
+          "name": "label_20_hp",
+          "text": {
+            "fixedValue": "- 20 HP"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "- 20 HP",
           "x": 141,
           "y": 80
         }
@@ -100,12 +104,14 @@
       {
         "type": "label",
         "data": {
-          "text": "- 1 Attack Damage",
+          "name": "label_1_attack_damage",
+          "text": {
+            "fixedValue": "- 1 Attack Damage"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "- 1 Attack Damage",
           "x": 141,
           "y": 89
         }
@@ -113,12 +119,14 @@
       {
         "type": "label",
         "data": {
-          "text": "- 4 Attack Speed",
+          "name": "label_4_attack_speed",
+          "text": {
+            "fixedValue": "- 4 Attack Speed"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "- 4 Attack Speed",
           "x": 141,
           "y": 98
         }
@@ -126,12 +134,14 @@
       {
         "type": "label",
         "data": {
-          "text": "- 0.1 Movement Speed",
+          "name": "label_01_movement_speed",
+          "text": {
+            "fixedValue": "- 0.1 Movement Speed"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "- 0.1 Movement Speed",
           "x": 141,
           "y": 107
         }
@@ -139,12 +149,14 @@
       {
         "type": "label",
         "data": {
-          "text": "- 0 Knockback Resistance",
+          "name": "label_0_knockback_resistance",
+          "text": {
+            "fixedValue": "- 0 Knockback Resistance"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "- 0 Knockback Resistance",
           "x": 141,
           "y": 116
         }
@@ -152,12 +164,14 @@
       {
         "type": "label",
         "data": {
-          "text": "- 0 Armor Point",
+          "name": "label_0_armor_point",
+          "text": {
+            "fixedValue": "- 0 Armor Point"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "- 0 Armor Point",
           "x": 141,
           "y": 125
         }
@@ -165,12 +179,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Magicule",
+          "name": "label_magicule",
+          "text": {
+            "fixedValue": "Magicule"
+          },
           "color": {
             "value": -16717607,
             "falpha": 0.0
           },
-          "name": "Magicule",
           "x": 141,
           "y": 134
         }
@@ -178,12 +194,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Random: 2,000 to 200,000",
+          "name": "label_random_2000_to_200000",
+          "text": {
+            "fixedValue": "Random: 2,000 to 200,000"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "Random: 2,000 to 200,000",
           "x": 141,
           "y": 143
         }
@@ -191,12 +209,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Spirit",
+          "name": "label_spirit",
+          "text": {
+            "fixedValue": "Spirit"
+          },
           "color": {
             "value": -16717607,
             "falpha": 0.0
           },
-          "name": "Spirit",
           "x": 141,
           "y": 152
         }
@@ -204,12 +224,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Higher chance to get chosen",
+          "name": "label_higher_chance_to_get_chosen",
+          "text": {
+            "fixedValue": "Higher chance to get chosen"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "Higher chance to get chosen",
           "x": 141,
           "y": 161
         }
@@ -217,12 +239,14 @@
       {
         "type": "label",
         "data": {
-          "text": "by Spirits",
+          "name": "label_by_spirits",
+          "text": {
+            "fixedValue": "by Spirits"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "by Spirits",
           "x": 141,
           "y": 170
         }

@@ -1,4 +1,3 @@
-
 package net.mcreator.tensurareimagined.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -11,7 +10,9 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.tensurareimagined.world.inventory.SkillMenuMainGuiMenu;
-import net.mcreator.tensurareimagined.network.TensurareimaginedModVariables;
+import net.mcreator.tensurareimagined.procedures.SkillMenuMainGuiRaceValueProcedure;
+import net.mcreator.tensurareimagined.procedures.SkillMenuMainGuiMagiculesValueProcedure;
+import net.mcreator.tensurareimagined.procedures.SkillMenuMainGuiMagiculeValueProcedure;
 import net.mcreator.tensurareimagined.network.SkillMenuMainGuiButtonMessage;
 import net.mcreator.tensurareimagined.TensurareimaginedMod;
 
@@ -25,6 +26,8 @@ public class SkillMenuMainGuiScreen extends AbstractContainerScreen<SkillMenuMai
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_na;
+	Button button_n;
 
 	public SkillMenuMainGuiScreen(SkillMenuMainGuiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -55,7 +58,7 @@ public class SkillMenuMainGuiScreen extends AbstractContainerScreen<SkillMenuMai
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("tensurareimagined:textures/screens/skillmenumaintest.png"));
-		this.blit(ms, this.leftPos + 0, this.topPos + 0, 0, 0, 296, 185, 296, 185);
+		this.blit(ms, this.leftPos + 1, this.topPos + 0, 0, 0, 296, 185, 296, 185);
 
 		RenderSystem.disableBlend();
 	}
@@ -76,14 +79,17 @@ public class SkillMenuMainGuiScreen extends AbstractContainerScreen<SkillMenuMai
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "" + ((entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new TensurareimaginedModVariables.PlayerVariables())).Race) + "", 37, 7, -16777216);
-		this.font.draw(poseStack, "Race:", 7, 7, -16777216);
-		this.font.draw(poseStack, "EP: Unknown", 7, 22, -205);
-		this.font.draw(poseStack, "Max Magicule: " + (int) ((entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new TensurareimaginedModVariables.PlayerVariables())).MaxMagicules) + "", 8, 43, -16737793);
-		this.font.draw(poseStack, "Magicule: " + ((entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new TensurareimaginedModVariables.PlayerVariables())).Magicules) + "", 8, 65, -16711681);
+		this.font.draw(poseStack,
+
+				SkillMenuMainGuiRaceValueProcedure.execute(entity), 37, 7, -16777216);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.skill_menu_main_gui.label_race"), 7, 7, -16777216);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.skill_menu_main_gui.label_ep_unknown"), 7, 22, -205);
+		this.font.draw(poseStack,
+
+				SkillMenuMainGuiMagiculeValueProcedure.execute(entity), 8, 43, -16737793);
+		this.font.draw(poseStack,
+
+				SkillMenuMainGuiMagiculesValueProcedure.execute(entity), 8, 65, -16711681);
 	}
 
 	@Override
@@ -96,13 +102,17 @@ public class SkillMenuMainGuiScreen extends AbstractContainerScreen<SkillMenuMai
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 240, this.topPos + 133, 30, 20, Component.literal(" N/A"), e -> {
+		button_na = new Button(this.leftPos + 240, this.topPos + 133, 30, 20, Component.translatable("gui.tensurareimagined.skill_menu_main_gui.button_na"), e -> {
 			if (true) {
 				TensurareimaginedMod.PACKET_HANDLER.sendToServer(new SkillMenuMainGuiButtonMessage(0, x, y, z));
 				SkillMenuMainGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 152, this.topPos + 137, 30, 20, Component.literal("n"), e -> {
-		}));
+		});
+		guistate.put("button:button_na", button_na);
+		this.addRenderableWidget(button_na);
+		button_n = new Button(this.leftPos + 152, this.topPos + 137, 30, 20, Component.translatable("gui.tensurareimagined.skill_menu_main_gui.button_n"), e -> {
+		});
+		guistate.put("button:button_n", button_n);
+		this.addRenderableWidget(button_n);
 	}
 }

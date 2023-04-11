@@ -1,0 +1,2455 @@
+{
+  "mod_elements": [
+    {
+      "name": "Shlime",
+      "type": "livingentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shlime",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/client/renderer/ShlimeRenderer.java",
+          "src/main/resources/data/tensurareimagined/forge/biome_modifier/shlime_biome_modifier.json",
+          "src/main/java/net/mcreator/tensurareimagined/entity/ShlimeEntity.java",
+          "src/main/resources/assets/tensurareimagined/models/item/shlime_spawn_egg.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "SlimeHurtCondition",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slime_hurt_condition",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SlimeHurtConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Game Rule Procedures"
+    },
+    {
+      "name": "ProofSword",
+      "type": "tool",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "proof_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tensurareimagined/models/item/proof_sword.json",
+          "src/main/java/net/mcreator/tensurareimagined/item/ProofSwordItem.java"
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "ReincarnationGUI",
+      "type": "gui",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reincarnationhuman_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/network/ReincarnationGUIButtonMessage.java",
+          "src/main/java/net/mcreator/tensurareimagined/client/gui/ReincarnationGUIScreen.java",
+          "src/main/java/net/mcreator/tensurareimagined/world/inventory/ReincarnationGUIMenu.java"
+        ]
+      },
+      "path": "~/Races"
+    },
+    {
+      "name": "ReincarnationOrcGui",
+      "type": "gui",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reincarnation_orc_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/client/gui/ReincarnationOrcGuiScreen.java",
+          "src/main/java/net/mcreator/tensurareimagined/world/inventory/ReincarnationOrcGuiMenu.java",
+          "src/main/java/net/mcreator/tensurareimagined/network/ReincarnationOrcGuiButtonMessage.java"
+        ]
+      },
+      "path": "~/Races"
+    },
+    {
+      "name": "OrcEffects",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orc_effects",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/OrcEffectsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Race Effects"
+    },
+    {
+      "name": "OrcSelectRace",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orc_select_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/OrcSelectRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "HumanSelectRace",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "human_select_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/HumanSelectRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "FirstGui",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "first_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/FirstGuiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "OpenOrcGui",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_orc_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/OpenOrcGuiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "MagiculeStart",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicule_start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/MagiculeStartProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Magicules"
+    },
+    {
+      "name": "MagiculeRegen",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicule_regen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/MagiculeRegenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Magicules"
+    },
+    {
+      "name": "MagiculeTestStickRightclicked",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicule_test_stick_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/MagiculeTestStickRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Magicules"
+    },
+    {
+      "name": "MagiculesOverlay",
+      "type": "overlay",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicules_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/client/screens/MagiculesOverlayOverlay.java"
+        ]
+      },
+      "path": "~/Magicules"
+    },
+    {
+      "name": "MagiculeTestStick",
+      "type": "tool",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicule_test_stick",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tensurareimagined/models/item/magicule_test_stick.json",
+          "src/main/java/net/mcreator/tensurareimagined/item/MagiculeTestStickItem.java"
+        ]
+      },
+      "path": "~/Magicules"
+    },
+    {
+      "name": "SkillMenuMainGui",
+      "type": "gui",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_menu_main_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/network/SkillMenuMainGuiButtonMessage.java",
+          "src/main/java/net/mcreator/tensurareimagined/world/inventory/SkillMenuMainGuiMenu.java",
+          "src/main/java/net/mcreator/tensurareimagined/client/gui/SkillMenuMainGuiScreen.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "OpenSkillMenu",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_skill_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/OpenSkillMenuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "SkillMenuOpenBind",
+      "type": "keybind",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_menu_open_bind",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/network/SkillMenuOpenBindMessage.java"
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "Skillbar",
+      "type": "overlay",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skillbar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/client/screens/SkillbarOverlay.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "UniqueSkillGui",
+      "type": "gui",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unique_skill_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/network/UniqueSkillGuiButtonMessage.java",
+          "src/main/java/net/mcreator/tensurareimagined/world/inventory/UniqueSkillGuiMenu.java",
+          "src/main/java/net/mcreator/tensurareimagined/client/gui/UniqueSkillGuiScreen.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "OpenUniqueSkills",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_unique_skills",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/OpenUniqueSkillsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "SelectSevererSkill",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_severer_skill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectSevererSkillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "UseSkill1OnKeyPressed",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_skill_1_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/UseSkill1OnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "UseSkill1",
+      "type": "keybind",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_skill_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/network/UseSkill1Message.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "UniqueSkillGuiPage2",
+      "type": "gui",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unique_skill_gui_page_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/client/gui/UniqueSkillGuiPage2Screen.java",
+          "src/main/java/net/mcreator/tensurareimagined/network/UniqueSkillGuiPage2ButtonMessage.java",
+          "src/main/java/net/mcreator/tensurareimagined/world/inventory/UniqueSkillGuiPage2Menu.java"
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "UniqueSkillGuiPage3",
+      "type": "gui",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unique_skill_gui_page_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/client/gui/UniqueSkillGuiPage3Screen.java",
+          "src/main/java/net/mcreator/tensurareimagined/network/UniqueSkillGuiPage3ButtonMessage.java",
+          "src/main/java/net/mcreator/tensurareimagined/world/inventory/UniqueSkillGuiPage3Menu.java"
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "OpenUSkill2",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_u_skill_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/OpenUSkill2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "OpenUSkill3",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_u_skill_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/OpenUSkill3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "BackUSkill1",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "back_u_skill_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/BackUSkill1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "BackUSkill2",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "back_u_skill_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/BackUSkill2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "SevererRanged",
+      "type": "rangeditem",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "severer_ranged",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/item/SevererRangedItem.java",
+          "src/main/java/net/mcreator/tensurareimagined/entity/SevererRangedEntity.java",
+          "src/main/resources/assets/tensurareimagined/models/item/severer_ranged.json",
+          "src/main/java/net/mcreator/tensurareimagined/client/renderer/SevererRangedRenderer.java"
+        ]
+      },
+      "path": "~/Ranged Objects"
+    },
+    {
+      "name": "SelectSeverer",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_severer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectSevererProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "Severerbullettest",
+      "type": "livingentity",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "severerbullettest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/entity/SevererbullettestEntity.java",
+          "src/main/java/net/mcreator/tensurareimagined/client/renderer/SevererbullettestRenderer.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "SelectSkill1",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_skill_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectSkill1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "SelectSkill2",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_skill_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectSkill2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "SelectSkill3",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_skill_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectSkill3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "SelectBerserker",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_berserker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectBerserkerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectDegenerate",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_degenerate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectDegenerateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectDilettante",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_dilettante",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectDilettanteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectEvny",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_evny",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectEvnyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectGeneralissimo",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_generalissimo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectGeneralissimoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectGluttony",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_gluttony",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectGluttonyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectGodlyCraftsman",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_godly_craftsman",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectGodlyCraftsmanProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectGourmet",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_gourmet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectGourmetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectGreatSage",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_great_sage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectGreatSageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectGreatWiseman",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_great_wiseman",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectGreatWisemanProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectGreed",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_greed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectGreedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectHealer",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_healer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectHealerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectInvestigator",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_investigator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectInvestigatorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectLionsHeart",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_lions_heart",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectLionsHeartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectLust",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_lust",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectLustProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectManufacturer",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_manufacturer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectManufacturerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectMartialMaster",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_martial_master",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectMartialMasterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectMathematician",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_mathematician",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectMathematicianProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectMerciless",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_merciless",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectMercilessProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectMusician",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_musician",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectMusicianProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectOppressor",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_oppressor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectOppressorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectPerceiver",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_perceiver",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectPerceiverProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectPlanner",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_planner",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectPlannerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectPredator",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_predator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectPredatorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectPride",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_pride",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectPrideProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "Skillbar1Value",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skillbar_1_value",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/Skillbar1ValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "Skillbar2Value",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skillbar_2_value",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/Skillbar2ValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "Skillbar3Value",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skillbar_3_value",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/Skillbar3ValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "MagiculesOverlayValues",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicules_overlay_values",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/MagiculesOverlayValuesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magicules"
+    },
+    {
+      "name": "SkillMenuMainGuiMagiculeValue",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_menu_main_gui_magicule_value",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SkillMenuMainGuiMagiculeValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "SkillMenuMainGuiMagiculesValue",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_menu_main_gui_magicules_value",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SkillMenuMainGuiMagiculesValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "SkillMenuMainGuiRaceValue",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_menu_main_gui_race_value",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SkillMenuMainGuiRaceValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "SelectPuppeteer",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_puppeteer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectPuppeteerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectResearcher",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_researcher",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectResearcherProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectRetaliator",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_retaliator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectRetaliatorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectRuler",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_ruler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectRulerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectShadowStriker",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_shadow_striker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectShadowStrikerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectSloth",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_sloth",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectSlothProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectSpearhead",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_spearhead",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectSpearheadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectStarved",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_starved",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectStarvedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectSurvivor",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_survivor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectSurvivorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectTheChosenOne",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_the_chosen_one",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectTheChosenOneProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectTraveler",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_traveler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectTravelerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectUsurper",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_usurper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectUsurperProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectWrath",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_wrath",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectWrathProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "SelectAnalyst",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_analyst",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/SelectAnalystProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills"
+    },
+    {
+      "name": "ClearSkillsButton",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clear_skills_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/ClearSkillsButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "ReincarnationGoblin",
+      "type": "gui",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reincarnation_goblin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/network/ReincarnationGoblinButtonMessage.java",
+          "src/main/java/net/mcreator/tensurareimagined/world/inventory/ReincarnationGoblinMenu.java",
+          "src/main/java/net/mcreator/tensurareimagined/client/gui/ReincarnationGoblinScreen.java"
+        ]
+      },
+      "path": "~/Races"
+    },
+    {
+      "name": "ReincarnationLizardman",
+      "type": "gui",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reincarnation_lizardman",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/client/gui/ReincarnationLizardmanScreen.java",
+          "src/main/java/net/mcreator/tensurareimagined/network/ReincarnationLizardmanButtonMessage.java",
+          "src/main/java/net/mcreator/tensurareimagined/world/inventory/ReincarnationLizardmanMenu.java"
+        ]
+      },
+      "path": "~/Races"
+    },
+    {
+      "name": "ReincarnationLesserDemon",
+      "type": "gui",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reincarnation_lesser_demon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/network/ReincarnationLesserDemonButtonMessage.java",
+          "src/main/java/net/mcreator/tensurareimagined/world/inventory/ReincarnationLesserDemonMenu.java",
+          "src/main/java/net/mcreator/tensurareimagined/client/gui/ReincarnationLesserDemonScreen.java"
+        ]
+      },
+      "path": "~/Races"
+    },
+    {
+      "name": "ReincarnationVampire",
+      "type": "gui",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reincarnation_vampire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/network/ReincarnationVampireButtonMessage.java",
+          "src/main/java/net/mcreator/tensurareimagined/world/inventory/ReincarnationVampireMenu.java",
+          "src/main/java/net/mcreator/tensurareimagined/client/gui/ReincarnationVampireScreen.java"
+        ]
+      },
+      "path": "~/Races"
+    },
+    {
+      "name": "ReincarnationSlime",
+      "type": "gui",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reincarnation_slime",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/network/ReincarnationSlimeButtonMessage.java",
+          "src/main/java/net/mcreator/tensurareimagined/world/inventory/ReincarnationSlimeMenu.java",
+          "src/main/java/net/mcreator/tensurareimagined/client/gui/ReincarnationSlimeScreen.java"
+        ]
+      },
+      "path": "~/Races"
+    },
+    {
+      "name": "ReincarnationWight",
+      "type": "gui",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reincarnation_wight",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/world/inventory/ReincarnationWightMenu.java",
+          "src/main/java/net/mcreator/tensurareimagined/client/gui/ReincarnationWightScreen.java",
+          "src/main/java/net/mcreator/tensurareimagined/network/ReincarnationWightButtonMessage.java"
+        ]
+      },
+      "path": "~/Races"
+    },
+    {
+      "name": "OpenGoblinRace",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_goblin_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/OpenGoblinRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "OpenLizardmanRace",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_lizardman_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/OpenLizardmanRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "OpenLesserDemonRace",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_lesser_demon_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/OpenLesserDemonRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "OpenVampireRace",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_vampire_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/OpenVampireRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "OpenSlimeRace",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_slime_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/OpenSlimeRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "OpenWightRace",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_wight_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/OpenWightRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "GoblinSelectRace",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goblin_select_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/GoblinSelectRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    },
+    {
+      "name": "LizardmanSelectRace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lizardman_select_race",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tensurareimagined/procedures/LizardmanSelectRaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI Procedures"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "PlayerRace",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "MagiculesStart",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "MaxMagicules",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "MagiculesMultiplier",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Magicules",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "Race",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "None"
+    },
+    {
+      "name": "Skill1",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "None"
+    },
+    {
+      "name": "Skill2",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "None"
+    },
+    {
+      "name": "Skill3",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "None"
+    },
+    {
+      "name": "SkillSelect",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "gui.tensurareimagined.reincarnation_lesser_demon.button_empty": "\u003c",
+      "gui.tensurareimagined.reincarnation_slime.label_orc": "Slime",
+      "gui.tensurareimagined.reincarnation_wight.label_08_movement_speed": "- Sun-weak wihout helmet",
+      "gui.tensurareimagined.reincarnationhuman_gui.label_1_attack_damage": "- 1 Attack Damage",
+      "gui.tensurareimagined.reincarnation_lesser_demon.label_magicule": "Magicule",
+      "gui.tensurareimagined.reincarnation_vampire.label_25_attack_damage": "- 2 Attack Damage",
+      "gui.tensurareimagined.reincarnation_vampire.label_07_knockback_resistance": "- Skill: Vampirism",
+      "gui.tensurareimagined.skill_menu_main_gui.label_varrace": "\u003cVAR:Race\u003e",
+      "gui.tensurareimagined.reincarnation_slime.label_abilities": "Intrinsic Abilities",
+      "gui.tensurareimagined.reincarnation_orc_gui.label_high_orcorc_lord": "- High Orc/Orc Lord",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_puppeteer": "Puppeteer",
+      "gui.tensurareimagined.reincarnation_goblin.label_35_attack_speed": "- 0.15 Movement Speed",
+      "gui.tensurareimagined.reincarnation_lizardman.button_select": "Select",
+      "gui.tensurareimagined.reincarnationhuman_gui.label_4_attack_speed": "- 4 Attack Speed",
+      "gui.tensurareimagined.reincarnation_goblin.label_07_knockback_resistance": "- Make friends with Goblins",
+      "gui.tensurareimagined.reincarnation_lesser_demon.label_07_knockback_resistance": "- Buff in the Spirit World",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_1": "1",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_2": "2",
+      "item.tensurareimagined.proof_sword": "Proof Sword",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_3": "3",
+      "gui.tensurareimagined.reincarnation_lesser_demon.label_30_hp": "- 40 HP",
+      "gui.tensurareimagined.reincarnation_lesser_demon.label_race_key_spiritual_gate": "- Race Key: Spirit Gate",
+      "gui.tensurareimagined.reincarnation_lizardman.label_abilities": "Abilities",
+      "entity.tensurareimagined.severerbullettest": "Severerbullettest",
+      "gui.tensurareimagined.unique_skill_gui_page_2.label_unique_skills": "Unique Skills",
+      "gui.tensurareimagined.reincarnation_lesser_demon.label_orc": "Lesser Demon",
+      "gui.tensurareimagined.reincarnation_lesser_demon.label_high_orcorc_lord": "- Skill: Magic Sense",
+      "gui.tensurareimagined.reincarnation_slime.button_empty1": "\u003e",
+      "gui.tensurareimagined.unique_skill_gui_page_3.button_starved": "Starved",
+      "gui.tensurareimagined.reincarnation_goblin.label_orc": "Goblin",
+      "gui.tensurareimagined.reincarnation_lizardman.label_random_3000_to_5000": "Random: 6,000 to 8,000",
+      "gui.tensurareimagined.reincarnation_vampire.label_axes_damage_x_15": "Suck blood from meat in hand",
+      "gui.tensurareimagined.reincarnation_slime.label_30_hp": "- 12 HP",
+      "gui.tensurareimagined.reincarnation_wight.label_35_attack_speed": "- Magicule Boost II",
+      "gui.tensurareimagined.reincarnationhuman_gui.button_select": "Select",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_manufacturer": "Manufacturer",
+      "key.tensurareimagined.use_skill_1": "Use Skill 1",
+      "gui.tensurareimagined.reincarnation_wight.label_orc": "Wight",
+      "gui.tensurareimagined.reincarnation_orc_gui.label_08_movement_speed": "- 0.8 Movement Speed",
+      "gui.tensurareimagined.reincarnation_slime.label_08_movement_speed": "- Self-Regeneration",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_planner": "Planner",
+      "gui.tensurareimagined.reincarnationhuman_gui.label_human": "Human",
+      "gui.tensurareimagined.reincarnation_slime.label_25_attack_damage": "- 0.3 Attack Damage",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_martial_master": "Martial Master",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_clear_skills": "Clear Skills",
+      "gui.tensurareimagined.reincarnation_lizardman.label_30_hp": "- 24 HP",
+      "gui.tensurareimagined.reincarnation_lizardman.label_magicule": "Magicule",
+      "gui.tensurareimagined.skillbar.label_3": "3",
+      "gui.tensurareimagined.unique_skill_gui.button_clear_skills": "Clear Skills",
+      "gui.tensurareimagined.reincarnation_vampire.label_abilities": "Abilities",
+      "gui.tensurareimagined.skill_menu_main_gui.label_ep_unknown": "EP: Unknown",
+      "gui.tensurareimagined.reincarnation_wight.label_abilities": "Abilities",
+      "gui.tensurareimagined.unique_skill_gui.button_next_page": "Next Page",
+      "gui.tensurareimagined.reincarnation_lesser_demon.label_evolutions": "Evolutions",
+      "gui.tensurareimagined.reincarnation_goblin.button_empty": "\u003c",
+      "gui.tensurareimagined.skillbar.label_empty": "1",
+      "gui.tensurareimagined.reincarnation_slime.label_evolutions": "Evolutions",
+      "item.tensurareimagined.severerbullettest_spawn_egg": "Severerbullettest Spawn Egg",
+      "gui.tensurareimagined.reincarnationhuman_gui.label_20_hp": "- 20 HP",
+      "gui.tensurareimagined.reincarnation_vampire.button_empty1": "\u003e",
+      "gui.tensurareimagined.unique_skill_gui.button_greed": "Greed",
+      "gui.tensurareimagined.reincarnation_wight.label_stats": "Stats",
+      "gui.tensurareimagined.magicules_overlay.label_magicules": "Magicules",
+      "gui.tensurareimagined.reincarnation_slime.button_empty": "\u003c",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_researcher": "Researcher",
+      "item.tensurareimagined.shlime_spawn_egg": "Shlime Spawn Egg",
+      "gui.tensurareimagined.reincarnation_wight.label_30_hp": "- 20 HP",
+      "item.tensurareimagined.severer_ranged": "Severer Ranged",
+      "gui.tensurareimagined.reincarnation_lesser_demon.label_08_movement_speed": "- Night Vision",
+      "gui.tensurareimagined.reincarnation_vampire.button_select": "Select",
+      "entity.tensurareimagined.shlime": "Shlime",
+      "gui.tensurareimagined.unique_skill_gui.label_unique_skills": "Unique Skills",
+      "gui.tensurareimagined.reincarnation_lizardman.label_evolutions": "Evolutions",
+      "gui.tensurareimagined.unique_skill_gui.button_healer": "Healer",
+      "gui.tensurareimagined.reincarnation_vampire.label_orc": "Vampire",
+      "gui.tensurareimagined.reincarnationhuman_gui.label_magicule": "Magicule",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_merciless": "Merciless",
+      "gui.tensurareimagined.reincarnation_orc_gui.label_30_hp": "- 30 HP",
+      "gui.tensurareimagined.reincarnation_wight.label_magicule": "Magicule",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_previous_page": "Previous Page",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_lust": "Lust",
+      "gui.tensurareimagined.reincarnation_goblin.label_evolutions": "Evolutions",
+      "gui.tensurareimagined.reincarnation_vampire.label_random_3000_to_5000": "- No natural regeneration",
+      "gui.tensurareimagined.unique_skill_gui.button_lions_heart": "Lion\u0027s Heart",
+      "gui.tensurareimagined.reincarnation_orc_gui.button_empty": "\u003c",
+      "gui.tensurareimagined.reincarnation_lesser_demon.label_abilities": "Abilities",
+      "gui.tensurareimagined.reincarnation_goblin.label_08_movement_speed": "Goblin - Hobgoblin - Ogre...",
+      "gui.tensurareimagined.reincarnation_wight.label_75_to_lifesteal": "- 75% to Life-steal",
+      "gui.tensurareimagined.reincarnation_slime.label_stomach_9x9_storage": "- Stomach: 9x9 Storage",
+      "gui.tensurareimagined.reincarnation_slime.label_35_attack_speed": "- No Fall Damage",
+      "gui.tensurareimagined.reincarnation_goblin.label_axes_damage_x_15": "- Spawn with 3 Goblins",
+      "gui.tensurareimagined.unique_skill_gui_page_3.button_wrath": "Wrath",
+      "gui.tensurareimagined.reincarnation_lizardman.button_empty": "\u003c",
+      "gui.tensurareimagined.reincarnation_lizardman.button_empty1": "\u003e",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_perciever": "Perciever",
+      "gui.tensurareimagined.reincarnationhuman_gui.label_random_2000_to_200000": "Random: 2,000 to 200,000",
+      "gui.tensurareimagined.unique_skill_gui_page_3.button_spearhead": "Spearhead",
+      "gui.tensurareimagined.reincarnation_orc_gui.label_25_attack_damage": "- 2.5 Attack Damage",
+      "gui.tensurareimagined.unique_skill_gui_page_3.button_2": "2",
+      "gui.tensurareimagined.unique_skill_gui_page_3.button_3": "3",
+      "gui.tensurareimagined.unique_skill_gui_page_3.button_1": "1",
+      "gui.tensurareimagined.reincarnation_orc_gui.label_stats": "Stats",
+      "gui.tensurareimagined.reincarnation_slime.label_high_orcorc_lord": "- Jump Boost II",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_mathematician": "Mathematician",
+      "gui.tensurareimagined.unique_skill_gui_page_3.label_unique_skills": "Unique Skills",
+      "gui.tensurareimagined.reincarnation_goblin.label_abilities": "Abilities",
+      "gui.tensurareimagined.reincarnation_lesser_demon.label_axes_damage_x_15": "- Spawn in the Spirit World",
+      "gui.tensurareimagined.unique_skill_gui.button_degenerate": "Degenerate",
+      "gui.tensurareimagined.reincarnation_wight.label_dont_regenerate_naturally": "- Don\u0027t regenerate naturally",
+      "gui.tensurareimagined.reincarnation_vampire.label_35_attack_speed": "Heal by Skills/Race Key",
+      "gui.tensurareimagined.unique_skill_gui.button_great_sage": "Great Sage",
+      "gui.tensurareimagined.reincarnation_goblin.label_chance_to_evolve_skills": "chance to evolve Skills",
+      "gui.tensurareimagined.reincarnation_goblin.label_magicule": "Magicule",
+      "gui.tensurareimagined.magicules_overlay.label_varmagiculesvarmaxmagicule": "\u003cVAR:Magicules\u003e/\u003cVAR:MaxMagicules\u003e",
+      "gui.tensurareimagined.reincarnationhuman_gui.button_empty": "\u003e",
+      "gui.tensurareimagined.skillbar.label_empty1": "2",
+      "gui.tensurareimagined.reincarnation_lizardman.label_orc": "Lizardman",
+      "gui.tensurareimagined.reincarnation_lizardman.label_25_attack_damage": "- 6 Attack Speed",
+      "gui.tensurareimagined.reincarnation_lesser_demon.label_25_attack_damage": "- 3 Attack Damage",
+      "gui.tensurareimagined.reincarnation_orc_gui.button_empty1": "\u003e",
+      "gui.tensurareimagined.skill_menu_main_gui.label_max_magicule_varintegermaxma": "Max Magicule: \u003cVAR:integer:MaxMagicules\u003e",
+      "gui.tensurareimagined.reincarnation_wight.button_empty": "\u003c",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_retaliator": "Retaliator",
+      "gui.tensurareimagined.reincarnation_orc_gui.label_axes_damage_x_15": "- Axes damage x 1.5",
+      "gui.tensurareimagined.reincarnation_orc_gui.label_magicule": "Magicule",
+      "gui.tensurareimagined.unique_skill_gui_page_3.button_clear_skills": "Clear Skills",
+      "gui.tensurareimagined.reincarnationhuman_gui.label_spirit": "Spirit",
+      "item.tensurareimagined.magicule_test_stick": "Magicule Test Stick",
+      "gui.tensurareimagined.reincarnation_orc_gui.label_orc": "Orc",
+      "gui.tensurareimagined.reincarnation_orc_gui.label_abilities": "Abilities",
+      "gui.tensurareimagined.reincarnationhuman_gui.label_0_armor_point": "- 0 Armor Point",
+      "gui.tensurareimagined.reincarnation_goblin.label_30_hp": "- 10 HP",
+      "gui.tensurareimagined.reincarnation_slime.button_select": "Select",
+      "gui.tensurareimagined.reincarnation_wight.label_axes_damage_x_15": "- Immune to some potions",
+      "gui.tensurareimagined.reincarnation_lizardman.label_08_movement_speed": "- x1.5 Spear Attack",
+      "gui.tensurareimagined.reincarnation_lizardman.label_stats": "Stats",
+      "gui.tensurareimagined.reincarnation_vampire.label_magicule": "Magicule",
+      "gui.tensurareimagined.reincarnation_slime.label_stats": "Stats",
+      "gui.tensurareimagined.unique_skill_gui.button_generalissimo": "Generalissimo",
+      "gui.tensurareimagined.reincarnationhuman_gui.label_higher_chance_to_get_chosen": "Higher chance to get chosen",
+      "gui.tensurareimagined.reincarnation_slime.label_magicule": "Magicule",
+      "gui.tensurareimagined.reincarnation_lizardman.label_axes_damage_x_15": "- Move faster in Rain/Water",
+      "gui.tensurareimagined.reincarnation_lizardman.label_07_knockback_resistance": "- x1.75 Trident Attack",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_opressor": "Opressor",
+      "gui.tensurareimagined.reincarnation_vampire.label_high_orcorc_lord": "- Weak under the sunlight",
+      "gui.tensurareimagined.unique_skill_gui_page_3.button_shadow_striker": "Shadow Striker",
+      "gui.tensurareimagined.reincarnationhuman_gui.label_stats": "Stats",
+      "gui.tensurareimagined.reincarnation_lesser_demon.label_only_20_mins_in_overworld": "Only 20 mins in overworld",
+      "gui.tensurareimagined.reincarnationhuman_gui.label_by_spirits": "by Spirits",
+      "gui.tensurareimagined.unique_skill_gui_page_3.button_traveler": "Traveler",
+      "gui.tensurareimagined.reincarnationhuman_gui.label_01_movement_speed": "- 0.1 Movement Speed",
+      "gui.tensurareimagined.reincarnation_slime.label_random_3000_to_5000": "Random: 2,000 to 6,000",
+      "gui.tensurareimagined.reincarnation_wight.label_random_3000_to_5000": "Random: 7,000 to 20,000",
+      "gui.tensurareimagined.unique_skill_gui.button_dilettante": "Dilettante",
+      "gui.tensurareimagined.skill_menu_main_gui.button_na": " N/A",
+      "gui.tensurareimagined.reincarnation_lesser_demon.label_random_3000_to_5000": "Random: 10,000 to 15,000",
+      "gui.tensurareimagined.reincarnation_vampire.label_race_key_sneak_bat_mode": "- Race Key: Sneak - Bat mode",
+      "gui.tensurareimagined.unique_skill_gui.button_envy": "Envy",
+      "gui.tensurareimagined.reincarnation_vampire.label_evolutions": "Evolutions",
+      "gui.tensurareimagined.reincarnation_wight.label_evolutions": "Evolutions",
+      "gui.tensurareimagined.unique_skill_gui_page_3.button_usurper": "Usurper",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_musician": "Musician",
+      "gui.tensurareimagined.reincarnation_orc_gui.label_35_attack_speed": "- 3.5 Attack Speed",
+      "gui.tensurareimagined.unique_skill_gui_page_3.button_sloth": "Sloth",
+      "gui.tensurareimagined.reincarnation_vampire.button_empty": "\u003c",
+      "gui.tensurareimagined.reincarnation_slime.label_axes_damage_x_15": "- Absorb And Dissolve",
+      "gui.tensurareimagined.reincarnation_vampire.label_stats": "Stats",
+      "gui.tensurareimagined.reincarnation_lesser_demon.button_empty1": "\u003e",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_ruler": "Ruler",
+      "gui.tensurareimagined.reincarnation_goblin.label_25_attack_damage": "- 0.5 Attack Damage",
+      "gui.tensurareimagined.unique_skill_gui.button_2": "2",
+      "gui.tensurareimagined.unique_skill_gui.button_3": "3",
+      "gui.tensurareimagined.unique_skill_gui.button_1": "1",
+      "gui.tensurareimagined.reincarnation_vampire.label_08_movement_speed": "Random: 10,000 to 15,000",
+      "gui.tensurareimagined.skill_menu_main_gui.button_n": "n",
+      "gui.tensurareimagined.reincarnation_lesser_demon.button_select": "Select",
+      "gui.tensurareimagined.unique_skill_gui_page_3.button_the_chosen_one": "The Chosen One",
+      "key.tensurareimagined.skill_menu_open_bind": "Skill Menu Open Bind",
+      "gui.tensurareimagined.skillbar.label_varskill2": "\u003cVAR:Skill2\u003e",
+      "gui.tensurareimagined.unique_skill_gui.button_beserker": "Beserker",
+      "gui.tensurareimagined.reincarnation_goblin.label_stats": "Stats",
+      "gui.tensurareimagined.reincarnation_orc_gui.label_random_3000_to_5000": "Random: 3,000 to 5,000",
+      "gui.tensurareimagined.skillbar.label_varskill1": "\u003cVAR:Skill1\u003e",
+      "gui.tensurareimagined.reincarnation_wight.label_25_attack_damage": "- 0.5 Attack Damage",
+      "gui.tensurareimagined.skillbar.label_varskill3": "\u003cVAR:Skill3\u003e",
+      "gui.tensurareimagined.reincarnationhuman_gui.label_0_knockback_resistance": "- 0 Knockback Resistance",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_predator": "Predator",
+      "gui.tensurareimagined.reincarnation_goblin.label_high_orcorc_lord": "- More evolutions, more",
+      "gui.tensurareimagined.reincarnation_lesser_demon.label_stats": "Stats",
+      "gui.tensurareimagined.reincarnation_goblin.button_select": "Select",
+      "gui.tensurareimagined.unique_skill_gui.button_gourmet": "Gourmet",
+      "gui.tensurareimagined.reincarnation_orc_gui.label_07_knockback_resistance": "- 0.7 Knockback Resistance",
+      "gui.tensurareimagined.unique_skill_gui.button_godly_craftsman": "Godly Craftsman",
+      "gui.tensurareimagined.reincarnation_lizardman.label_high_orcorc_lord": "- Dragonewt",
+      "gui.tensurareimagined.reincarnation_wight.label_07_knockback_resistance": "- Weak against Mithril/Smite",
+      "gui.tensurareimagined.reincarnation_lesser_demon.label_35_attack_speed": "- Flight",
+      "gui.tensurareimagined.reincarnation_goblin.button_empty1": "\u003e",
+      "gui.tensurareimagined.reincarnation_wight.label_high_orcorc_lord": "- x2 Bow/Crossbow Damage",
+      "gui.tensurareimagined.unique_skill_gui.button_analyst": "Analyst",
+      "gui.tensurareimagined.reincarnation_orc_gui.button_select": "Select",
+      "gui.tensurareimagined.reincarnation_wight.button_select": "Select",
+      "gui.tensurareimagined.unique_skill_gui.button_great_wiseman": "Great Wiseman",
+      "gui.tensurareimagined.reincarnation_slime.label_07_knockback_resistance": "No hunger + No drowning",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_severer": "Severer",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_next_page": "Next Page",
+      "gui.tensurareimagined.reincarnation_vampire.label_30_hp": "- 40 HP",
+      "gui.tensurareimagined.skill_menu_main_gui.label_race": "Race:",
+      "gui.tensurareimagined.unique_skill_gui_page_3.button_previous_page": "Previous Page",
+      "gui.tensurareimagined.unique_skill_gui.button_investigator": "Investigator",
+      "gui.tensurareimagined.unique_skill_gui_page_3.button_survivor": "Survivor",
+      "gui.tensurareimagined.reincarnation_goblin.label_random_3000_to_5000": "Random: 1,000 to 4,000",
+      "gui.tensurareimagined.unique_skill_gui_page_2.button_pride": "Pride",
+      "gui.tensurareimagined.skill_menu_main_gui.label_magicule_varmagicules": "Magicule: \u003cVAR:Magicules\u003e",
+      "gui.tensurareimagined.reincarnation_lizardman.label_35_attack_speed": "- Breathe underwater",
+      "gui.tensurareimagined.unique_skill_gui.button_gluttony": "Gluttony",
+      "gui.tensurareimagined.reincarnation_orc_gui.label_evolutions": "Evolutions"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Magicules",
+        "children": []
+      },
+      {
+        "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "Races",
+        "children": []
+      },
+      {
+        "name": "Race Effects",
+        "children": []
+      },
+      {
+        "name": "GUI Procedures",
+        "children": []
+      },
+      {
+        "name": "Mobs",
+        "children": []
+      },
+      {
+        "name": "Game Rule Procedures",
+        "children": []
+      },
+      {
+        "name": "Weapons",
+        "children": []
+      },
+      {
+        "name": "Keybinds",
+        "children": []
+      },
+      {
+        "name": "Ranged Objects",
+        "children": []
+      },
+      {
+        "name": "Skills",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "tensurareimagined",
+    "modName": "TensuraReimagined",
+    "version": "1.0.0",
+    "author": "Justin, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.tensurareimagined",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}

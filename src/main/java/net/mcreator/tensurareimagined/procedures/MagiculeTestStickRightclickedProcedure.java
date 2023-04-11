@@ -15,11 +15,9 @@ public class MagiculeTestStickRightclickedProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new TensurareimaginedModVariables.PlayerVariables())).Magicules > 24) {
+		if ((entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TensurareimaginedModVariables.PlayerVariables())).Magicules > 24) {
 			{
-				double _setval = (entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new TensurareimaginedModVariables.PlayerVariables())).Magicules - 25;
+				double _setval = (entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TensurareimaginedModVariables.PlayerVariables())).Magicules - 25;
 				entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.Magicules = _setval;
 					capability.syncPlayerVariables(entity);

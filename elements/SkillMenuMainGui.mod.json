@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -15,20 +15,22 @@
         "data": {
           "image": "skillmenumaintest.png",
           "use1Xscale": false,
-          "name": "skillmenumaintest.png",
-          "x": 66,
+          "x": 67,
           "y": 28
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "<VAR:Race>",
+          "name": "label_varrace",
+          "text": {
+            "fixedValue": "<VAR:Race>",
+            "name": "SkillMenuMainGuiRaceValue"
+          },
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "<VAR:Race>",
           "x": 103,
           "y": 35
         }
@@ -36,12 +38,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Race:",
+          "name": "label_race",
+          "text": {
+            "fixedValue": "Race:"
+          },
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "Race:",
           "x": 73,
           "y": 35
         }
@@ -49,12 +53,14 @@
       {
         "type": "label",
         "data": {
-          "text": "EP: Unknown",
+          "name": "label_ep_unknown",
+          "text": {
+            "fixedValue": "EP: Unknown"
+          },
           "color": {
             "value": -205,
             "falpha": 0.0
           },
-          "name": "EP: Unknown",
           "x": 73,
           "y": 50
         }
@@ -62,12 +68,15 @@
       {
         "type": "label",
         "data": {
-          "text": "Max Magicule: <VAR:integer:MaxMagicules>",
+          "name": "label_max_magicule_varintegermaxma",
+          "text": {
+            "fixedValue": "Max Magicule: <VAR:integer:MaxMagicules>",
+            "name": "SkillMenuMainGuiMagiculeValue"
+          },
           "color": {
             "value": -16737793,
             "falpha": 0.0
           },
-          "name": "Max Magicule: <VAR:integer:MaxMagicules>",
           "x": 74,
           "y": 71
         }
@@ -75,12 +84,15 @@
       {
         "type": "label",
         "data": {
-          "text": "Magicule: <VAR:Magicules>",
+          "name": "label_magicule_varmagicules",
+          "text": {
+            "fixedValue": "Magicule: <VAR:Magicules>",
+            "name": "SkillMenuMainGuiMagiculesValue"
+          },
           "color": {
             "value": -16711681,
             "falpha": 0.0
           },
-          "name": "Magicule: <VAR:Magicules>",
           "x": 74,
           "y": 93
         }
@@ -88,13 +100,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_na",
           "text": " N/A",
           "onClick": {
             "name": "OpenUniqueSkills"
           },
           "width": 30,
           "height": 20,
-          "name": " N/A",
           "x": 306,
           "y": 161
         }
@@ -102,10 +114,10 @@
       {
         "type": "button",
         "data": {
+          "name": "button_n",
           "text": "n",
           "width": 30,
           "height": 20,
-          "name": "n",
           "x": 218,
           "y": 165
         }

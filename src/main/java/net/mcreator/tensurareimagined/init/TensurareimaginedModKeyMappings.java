@@ -21,8 +21,7 @@ import net.mcreator.tensurareimagined.TensurareimaginedMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class TensurareimaginedModKeyMappings {
-	public static final KeyMapping SKILL_MENU_OPEN_BIND = new KeyMapping("key.tensurareimagined.skill_menu_open_bind", GLFW.GLFW_KEY_B,
-			"key.categories.misc") {
+	public static final KeyMapping SKILL_MENU_OPEN_BIND = new KeyMapping("key.tensurareimagined.skill_menu_open_bind", GLFW.GLFW_KEY_B, "key.categories.misc") {
 		private boolean isDownOld = false;
 
 		@Override

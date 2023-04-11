@@ -30,8 +30,7 @@ public class OrcEffectsProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new TensurareimaginedModVariables.PlayerVariables())).PlayerRace == 2) {
+		if ((entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TensurareimaginedModVariables.PlayerVariables())).PlayerRace == 2) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 100, 1, (false), (false)));
 			if (entity instanceof LivingEntity _entity)

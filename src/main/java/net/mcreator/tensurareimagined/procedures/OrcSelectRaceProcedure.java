@@ -13,8 +13,7 @@ public class OrcSelectRaceProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new TensurareimaginedModVariables.PlayerVariables())).PlayerRace == 0) {
+		if ((entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TensurareimaginedModVariables.PlayerVariables())).PlayerRace == 0) {
 			if (entity instanceof Player _player)
 				_player.closeContainer();
 			{
@@ -31,8 +30,7 @@ public class OrcSelectRaceProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-			if ((entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new TensurareimaginedModVariables.PlayerVariables())).MagiculesStart == false) {
+			if ((entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TensurareimaginedModVariables.PlayerVariables())).MagiculesStart == false) {
 				{
 					double _setval = Math.round(Mth.nextDouble(RandomSource.create(), 3000, 5000));
 					entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -49,16 +47,14 @@ public class OrcSelectRaceProcedure {
 				}
 				TensurareimaginedMod.queueServerWork(20, () -> {
 					{
-						double _setval = (entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new TensurareimaginedModVariables.PlayerVariables())).MaxMagicules + 1;
+						double _setval = (entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TensurareimaginedModVariables.PlayerVariables())).MaxMagicules + 1;
 						entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.MaxMagicules = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
 					{
-						double _setval = (entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new TensurareimaginedModVariables.PlayerVariables())).MagiculesMultiplier + 1;
+						double _setval = (entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TensurareimaginedModVariables.PlayerVariables())).MagiculesMultiplier + 1;
 						entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.MagiculesMultiplier = _setval;
 							capability.syncPlayerVariables(entity);
@@ -66,8 +62,7 @@ public class OrcSelectRaceProcedure {
 					}
 				});
 				{
-					double _setval = (entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new TensurareimaginedModVariables.PlayerVariables())).MaxMagicules;
+					double _setval = (entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TensurareimaginedModVariables.PlayerVariables())).MaxMagicules;
 					entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.Magicules = _setval;
 						capability.syncPlayerVariables(entity);

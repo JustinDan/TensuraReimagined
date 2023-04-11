@@ -1,4 +1,3 @@
-
 package net.mcreator.tensurareimagined.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,8 @@ public class ReincarnationGUIScreen extends AbstractContainerScreen<Reincarnatio
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_empty;
+	Button button_select;
 
 	public ReincarnationGUIScreen(ReincarnationGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -78,19 +79,19 @@ public class ReincarnationGUIScreen extends AbstractContainerScreen<Reincarnatio
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Human", 69, 25, -1);
-		this.font.draw(poseStack, "Stats", 15, 34, -16717607);
-		this.font.draw(poseStack, "- 20 HP", 15, 43, -1);
-		this.font.draw(poseStack, "- 1 Attack Damage", 15, 52, -1);
-		this.font.draw(poseStack, "- 4 Attack Speed", 15, 61, -1);
-		this.font.draw(poseStack, "- 0.1 Movement Speed", 15, 70, -1);
-		this.font.draw(poseStack, "- 0 Knockback Resistance", 15, 79, -1);
-		this.font.draw(poseStack, "- 0 Armor Point", 15, 88, -1);
-		this.font.draw(poseStack, "Magicule", 15, 97, -16717607);
-		this.font.draw(poseStack, "Random: 2,000 to 200,000", 15, 106, -1);
-		this.font.draw(poseStack, "Spirit", 15, 115, -16717607);
-		this.font.draw(poseStack, "Higher chance to get chosen", 15, 124, -1);
-		this.font.draw(poseStack, "by Spirits", 15, 133, -1);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnationhuman_gui.label_human"), 69, 25, -1);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnationhuman_gui.label_stats"), 15, 34, -16717607);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnationhuman_gui.label_20_hp"), 15, 43, -1);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnationhuman_gui.label_1_attack_damage"), 15, 52, -1);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnationhuman_gui.label_4_attack_speed"), 15, 61, -1);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnationhuman_gui.label_01_movement_speed"), 15, 70, -1);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnationhuman_gui.label_0_knockback_resistance"), 15, 79, -1);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnationhuman_gui.label_0_armor_point"), 15, 88, -1);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnationhuman_gui.label_magicule"), 15, 97, -16717607);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnationhuman_gui.label_random_2000_to_200000"), 15, 106, -1);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnationhuman_gui.label_spirit"), 15, 115, -16717607);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnationhuman_gui.label_higher_chance_to_get_chosen"), 15, 124, -1);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnationhuman_gui.label_by_spirits"), 15, 133, -1);
 	}
 
 	@Override
@@ -103,17 +104,21 @@ public class ReincarnationGUIScreen extends AbstractContainerScreen<Reincarnatio
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 185, this.topPos + 77, 30, 20, Component.literal(">"), e -> {
+		button_empty = new Button(this.leftPos + 185, this.topPos + 77, 30, 20, Component.translatable("gui.tensurareimagined.reincarnationhuman_gui.button_empty"), e -> {
 			if (true) {
 				TensurareimaginedMod.PACKET_HANDLER.sendToServer(new ReincarnationGUIButtonMessage(0, x, y, z));
 				ReincarnationGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 60, this.topPos + 169, 56, 20, Component.literal("Select"), e -> {
+		});
+		guistate.put("button:button_empty", button_empty);
+		this.addRenderableWidget(button_empty);
+		button_select = new Button(this.leftPos + 60, this.topPos + 169, 56, 20, Component.translatable("gui.tensurareimagined.reincarnationhuman_gui.button_select"), e -> {
 			if (true) {
 				TensurareimaginedMod.PACKET_HANDLER.sendToServer(new ReincarnationGUIButtonMessage(1, x, y, z));
 				ReincarnationGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_select", button_select);
+		this.addRenderableWidget(button_select);
 	}
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -7,66 +7,121 @@
       {
         "type": "label",
         "data": {
-          "text": "-",
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "1"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "-",
-          "x": 179,
-          "y": 184
+          "x": 8,
+          "y": 163
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "-",
+          "name": "label_empty1",
+          "text": {
+            "fixedValue": "2"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "-",
-          "x": 242,
-          "y": 184
+          "x": 8,
+          "y": 185
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "<VAR:Skill1>",
+          "name": "label_varskill1",
+          "text": {
+            "fixedValue": "<VAR:Skill1>",
+            "name": "Skillbar1Value"
+          },
           "color": {
             "value": -52429,
             "falpha": 0.0
           },
-          "name": "<VAR:Skill1>",
-          "x": 188,
-          "y": 184
+          "x": 16,
+          "y": 163
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "<VAR:Skill2>",
+          "name": "label_varskill2",
+          "text": {
+            "fixedValue": "<VAR:Skill2>",
+            "name": "Skillbar2Value"
+          },
           "color": {
-            "value": -1,
+            "value": -16711936,
             "falpha": 0.0
           },
-          "name": "<VAR:Skill2>",
-          "x": 134,
-          "y": 184
+          "x": 16,
+          "y": 185
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "<VAR:Skill3>",
+          "name": "label_varskill3",
+          "text": {
+            "fixedValue": "<VAR:Skill3>",
+            "name": "Skillbar3Value"
+          },
+          "color": {
+            "value": -205,
+            "falpha": 0.0
+          },
+          "x": 16,
+          "y": 207
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_3",
+          "text": {
+            "fixedValue": "3"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "<VAR:Skill3>",
-          "x": 251,
-          "y": 184
+          "x": 8,
+          "y": 207
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillbartest.png",
+          "use1Xscale": false,
+          "x": 5,
+          "y": 158
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillbartest.png",
+          "use1Xscale": false,
+          "x": 5,
+          "y": 180
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skillbartest.png",
+          "use1Xscale": false,
+          "x": 5,
+          "y": 202
         }
       }
     ],
@@ -77,7 +132,7 @@
       "sy": 18,
       "ox": 14,
       "oy": 24,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

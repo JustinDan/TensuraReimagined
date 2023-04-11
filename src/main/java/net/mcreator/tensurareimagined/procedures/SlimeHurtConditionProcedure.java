@@ -30,8 +30,7 @@ public class SlimeHurtConditionProcedure {
 	private static void execute(@Nullable Event event, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-				.getItem() == TensurareimaginedModItems.PROOF_SWORD.get()) != entity instanceof ShlimeEntity) {
+		if (((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TensurareimaginedModItems.PROOF_SWORD.get()) != entity instanceof ShlimeEntity) {
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
 			}

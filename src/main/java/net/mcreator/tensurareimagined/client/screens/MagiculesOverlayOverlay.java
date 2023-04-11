@@ -11,9 +11,10 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.tensurareimagined.network.TensurareimaginedModVariables;
+import net.mcreator.tensurareimagined.procedures.MagiculesOverlayValuesProcedure;
 
 @Mod.EventBusSubscriber({Dist.CLIENT})
 public class MagiculesOverlayOverlay {
@@ -23,30 +24,22 @@ public class MagiculesOverlayOverlay {
 		int h = event.getWindow().getGuiScaledHeight();
 		int posX = w / 2;
 		int posY = h / 2;
-		Level _world = null;
-		double _x = 0;
-		double _y = 0;
-		double _z = 0;
+		Level world = null;
+		double x = 0;
+		double y = 0;
+		double z = 0;
 		Player entity = Minecraft.getInstance().player;
 		if (entity != null) {
-			_world = entity.level;
-			_x = entity.getX();
-			_y = entity.getY();
-			_z = entity.getZ();
+			world = entity.level;
+			x = entity.getX();
+			y = entity.getY();
+			z = entity.getZ();
 		}
-		Level world = _world;
-		double x = _x;
-		double y = _y;
-		double z = _z;
 		if (true) {
 			Minecraft.getInstance().font.draw(event.getPoseStack(),
-					"" + ((entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new TensurareimaginedModVariables.PlayerVariables())).Magicules) + "/"
-							+ ((entity.getCapability(TensurareimaginedModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new TensurareimaginedModVariables.PlayerVariables())).MaxMagicules)
-							+ "",
-					posX + -216, posY + 104, -16711681);
-			Minecraft.getInstance().font.draw(event.getPoseStack(), "Magicules", posX + -207, posY + 95, -10027009);
+
+					MagiculesOverlayValuesProcedure.execute(entity), posX + 99, posY + 104, -16711681);
+			Minecraft.getInstance().font.draw(event.getPoseStack(), Component.translatable("gui.tensurareimagined.magicules_overlay.label_magicules"), posX + 126, posY + 95, -10027009);
 		}
 	}
 }

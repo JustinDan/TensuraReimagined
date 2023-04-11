@@ -16,7 +16,23 @@ import net.mcreator.tensurareimagined.procedures.SelectSkill3Procedure;
 import net.mcreator.tensurareimagined.procedures.SelectSkill2Procedure;
 import net.mcreator.tensurareimagined.procedures.SelectSkill1Procedure;
 import net.mcreator.tensurareimagined.procedures.SelectSevererProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectRulerProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectRetaliatorProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectResearcherProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectPuppeteerProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectPrideProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectPredatorProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectPlannerProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectPerceiverProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectOppressorProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectMusicianProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectMercilessProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectMathematicianProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectMartialMasterProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectManufacturerProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectLustProcedure;
 import net.mcreator.tensurareimagined.procedures.OpenUSkill3Procedure;
+import net.mcreator.tensurareimagined.procedures.ClearSkillsButtonProcedure;
 import net.mcreator.tensurareimagined.procedures.BackUSkill1Procedure;
 import net.mcreator.tensurareimagined.TensurareimaginedMod;
 
@@ -67,6 +83,66 @@ public class UniqueSkillGuiPage2ButtonMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+
+			SelectRetaliatorProcedure.execute(entity);
+		}
+		if (buttonID == 1) {
+
+			SelectLustProcedure.execute(entity);
+		}
+		if (buttonID == 2) {
+
+			SelectManufacturerProcedure.execute(entity);
+		}
+		if (buttonID == 3) {
+
+			SelectMartialMasterProcedure.execute(entity);
+		}
+		if (buttonID == 4) {
+
+			SelectMathematicianProcedure.execute(entity);
+		}
+		if (buttonID == 5) {
+
+			SelectMercilessProcedure.execute(entity);
+		}
+		if (buttonID == 6) {
+
+			SelectPrideProcedure.execute(entity);
+		}
+		if (buttonID == 7) {
+
+			SelectMusicianProcedure.execute(entity);
+		}
+		if (buttonID == 8) {
+
+			SelectOppressorProcedure.execute(entity);
+		}
+		if (buttonID == 9) {
+
+			SelectPerceiverProcedure.execute(entity);
+		}
+		if (buttonID == 10) {
+
+			SelectPlannerProcedure.execute(entity);
+		}
+		if (buttonID == 11) {
+
+			SelectPredatorProcedure.execute(entity);
+		}
+		if (buttonID == 12) {
+
+			SelectPuppeteerProcedure.execute(entity);
+		}
+		if (buttonID == 13) {
+
+			SelectResearcherProcedure.execute(entity);
+		}
+		if (buttonID == 14) {
+
+			SelectRulerProcedure.execute(entity);
+		}
 		if (buttonID == 15) {
 
 			SelectSevererProcedure.execute(entity);
@@ -91,11 +167,14 @@ public class UniqueSkillGuiPage2ButtonMessage {
 
 			SelectSkill3Procedure.execute(entity);
 		}
+		if (buttonID == 21) {
+
+			ClearSkillsButtonProcedure.execute(entity);
+		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		TensurareimaginedMod.addNetworkMessage(UniqueSkillGuiPage2ButtonMessage.class, UniqueSkillGuiPage2ButtonMessage::buffer,
-				UniqueSkillGuiPage2ButtonMessage::new, UniqueSkillGuiPage2ButtonMessage::handler);
+		TensurareimaginedMod.addNetworkMessage(UniqueSkillGuiPage2ButtonMessage.class, UniqueSkillGuiPage2ButtonMessage::buffer, UniqueSkillGuiPage2ButtonMessage::new, UniqueSkillGuiPage2ButtonMessage::handler);
 	}
 }

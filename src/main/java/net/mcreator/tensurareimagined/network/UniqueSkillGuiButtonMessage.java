@@ -15,7 +15,23 @@ import net.mcreator.tensurareimagined.world.inventory.UniqueSkillGuiMenu;
 import net.mcreator.tensurareimagined.procedures.SelectSkill3Procedure;
 import net.mcreator.tensurareimagined.procedures.SelectSkill2Procedure;
 import net.mcreator.tensurareimagined.procedures.SelectSkill1Procedure;
+import net.mcreator.tensurareimagined.procedures.SelectLionsHeartProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectInvestigatorProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectHealerProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectGreedProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectGreatWisemanProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectGreatSageProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectGourmetProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectGodlyCraftsmanProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectGluttonyProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectGeneralissimoProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectEvnyProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectDilettanteProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectDegenerateProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectBerserkerProcedure;
+import net.mcreator.tensurareimagined.procedures.SelectAnalystProcedure;
 import net.mcreator.tensurareimagined.procedures.OpenUSkill2Procedure;
+import net.mcreator.tensurareimagined.procedures.ClearSkillsButtonProcedure;
 import net.mcreator.tensurareimagined.TensurareimaginedMod;
 
 import java.util.function.Supplier;
@@ -65,6 +81,66 @@ public class UniqueSkillGuiButtonMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+
+			SelectAnalystProcedure.execute(entity);
+		}
+		if (buttonID == 1) {
+
+			SelectBerserkerProcedure.execute(entity);
+		}
+		if (buttonID == 2) {
+
+			SelectDegenerateProcedure.execute(entity);
+		}
+		if (buttonID == 3) {
+
+			SelectDilettanteProcedure.execute(entity);
+		}
+		if (buttonID == 4) {
+
+			SelectEvnyProcedure.execute(entity);
+		}
+		if (buttonID == 5) {
+
+			SelectGeneralissimoProcedure.execute(entity);
+		}
+		if (buttonID == 6) {
+
+			SelectGluttonyProcedure.execute(entity);
+		}
+		if (buttonID == 7) {
+
+			SelectGourmetProcedure.execute(entity);
+		}
+		if (buttonID == 8) {
+
+			SelectGodlyCraftsmanProcedure.execute(entity);
+		}
+		if (buttonID == 9) {
+
+			SelectGreatSageProcedure.execute(entity);
+		}
+		if (buttonID == 10) {
+
+			SelectGreatWisemanProcedure.execute(entity);
+		}
+		if (buttonID == 11) {
+
+			SelectGreedProcedure.execute(entity);
+		}
+		if (buttonID == 12) {
+
+			SelectHealerProcedure.execute(entity);
+		}
+		if (buttonID == 13) {
+
+			SelectInvestigatorProcedure.execute(entity);
+		}
+		if (buttonID == 14) {
+
+			SelectLionsHeartProcedure.execute(entity);
+		}
 		if (buttonID == 15) {
 
 			OpenUSkill2Procedure.execute(world, x, y, z, entity);
@@ -81,11 +157,14 @@ public class UniqueSkillGuiButtonMessage {
 
 			SelectSkill3Procedure.execute(entity);
 		}
+		if (buttonID == 19) {
+
+			ClearSkillsButtonProcedure.execute(entity);
+		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		TensurareimaginedMod.addNetworkMessage(UniqueSkillGuiButtonMessage.class, UniqueSkillGuiButtonMessage::buffer,
-				UniqueSkillGuiButtonMessage::new, UniqueSkillGuiButtonMessage::handler);
+		TensurareimaginedMod.addNetworkMessage(UniqueSkillGuiButtonMessage.class, UniqueSkillGuiButtonMessage::buffer, UniqueSkillGuiButtonMessage::new, UniqueSkillGuiButtonMessage::handler);
 	}
 }

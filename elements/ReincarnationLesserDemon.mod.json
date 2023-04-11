@@ -1,0 +1,283 @@
+{
+  "_fv": 39,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 167,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "guibordertest.png",
+          "use1Xscale": false,
+          "x": 127,
+          "y": 38
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select",
+          "text": "Select",
+          "onClick": {
+            "name": "OrcSelectRace"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 186,
+          "y": 206
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_orc",
+          "text": {
+            "fixedValue": "Lesser Demon"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_stats",
+          "text": {
+            "fixedValue": "Stats"
+          },
+          "color": {
+            "value": -16717607,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_30_hp",
+          "text": {
+            "fixedValue": "- 40 HP"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_25_attack_damage",
+          "text": {
+            "fixedValue": "- 3 Attack Damage"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_35_attack_speed",
+          "text": {
+            "fixedValue": "- Flight"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_08_movement_speed",
+          "text": {
+            "fixedValue": "- Night Vision"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_07_knockback_resistance",
+          "text": {
+            "fixedValue": "- Buff in the Spirit World"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magicule",
+          "text": {
+            "fixedValue": "Magicule"
+          },
+          "color": {
+            "value": -16717607,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_random_3000_to_5000",
+          "text": {
+            "fixedValue": "Random: 10,000 to 15,000"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_abilities",
+          "text": {
+            "fixedValue": "Abilities"
+          },
+          "color": {
+            "value": -16717607,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_axes_damage_x_15",
+          "text": {
+            "fixedValue": "- Spawn in the Spirit World"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_high_orcorc_lord",
+          "text": {
+            "fixedValue": "- Skill: Magic Sense"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "<",
+          "onClick": {
+            "name": "OpenLizardmanRace"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 87,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_race_key_spiritual_gate",
+          "text": {
+            "fixedValue": "- Race Key: Spirit Gate"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 170
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_only_20_mins_in_overworld",
+          "text": {
+            "fixedValue": "Only 20 mins in overworld"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 150,
+          "y": 179
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty1",
+          "text": ">",
+          "onClick": {
+            "name": "OpenVampireRace"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 312,
+          "y": 116
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

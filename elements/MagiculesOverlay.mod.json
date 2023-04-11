@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -7,26 +7,31 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:Magicules>/<VAR:MaxMagicules>",
+          "name": "label_varmagiculesvarmaxmagicule",
+          "text": {
+            "fixedValue": "<VAR:Magicules>/<VAR:MaxMagicules>",
+            "name": "MagiculesOverlayValues"
+          },
           "color": {
             "value": -16711681,
             "falpha": 0.0
           },
-          "name": "<VAR:Magicules>/<VAR:MaxMagicules>",
-          "x": -3,
+          "x": 312,
           "y": 224
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "Magicules",
+          "name": "label_magicules",
+          "text": {
+            "fixedValue": "Magicules"
+          },
           "color": {
             "value": -10027009,
             "falpha": 0.0
           },
-          "name": "Magicules",
-          "x": 6,
+          "x": 339,
           "y": 215
         }
       }

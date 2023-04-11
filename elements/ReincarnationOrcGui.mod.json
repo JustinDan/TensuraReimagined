@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -15,7 +15,6 @@
         "data": {
           "image": "guibordertest.png",
           "use1Xscale": false,
-          "name": "guibordertest.png",
           "x": 127,
           "y": 38
         }
@@ -23,13 +22,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_select",
           "text": "Select",
           "onClick": {
             "name": "OrcSelectRace"
           },
           "width": 56,
           "height": 20,
-          "name": "Select",
           "x": 186,
           "y": 206
         }
@@ -37,25 +36,29 @@
       {
         "type": "label",
         "data": {
-          "text": "Orc",
+          "name": "label_orc",
+          "text": {
+            "fixedValue": "Orc"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "Orc",
-          "x": 204,
-          "y": 62
+          "x": 141,
+          "y": 53
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "Stats",
+          "name": "label_stats",
+          "text": {
+            "fixedValue": "Stats"
+          },
           "color": {
             "value": -16717607,
             "falpha": 0.0
           },
-          "name": "Stats",
           "x": 141,
           "y": 71
         }
@@ -63,12 +66,14 @@
       {
         "type": "label",
         "data": {
-          "text": "- 30 HP",
+          "name": "label_30_hp",
+          "text": {
+            "fixedValue": "- 30 HP"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "- 30 HP",
           "x": 141,
           "y": 80
         }
@@ -76,12 +81,14 @@
       {
         "type": "label",
         "data": {
-          "text": "- 2.5 Attack Damage",
+          "name": "label_25_attack_damage",
+          "text": {
+            "fixedValue": "- 2.5 Attack Damage"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "- 2.5 Attack Damage",
           "x": 141,
           "y": 89
         }
@@ -89,12 +96,14 @@
       {
         "type": "label",
         "data": {
-          "text": "- 3.5 Attack Speed",
+          "name": "label_35_attack_speed",
+          "text": {
+            "fixedValue": "- 3.5 Attack Speed"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "- 3.5 Attack Speed",
           "x": 141,
           "y": 98
         }
@@ -102,12 +111,14 @@
       {
         "type": "label",
         "data": {
-          "text": "- 0.8 Movement Speed",
+          "name": "label_08_movement_speed",
+          "text": {
+            "fixedValue": "- 0.8 Movement Speed"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "- 0.8 Movement Speed",
           "x": 141,
           "y": 107
         }
@@ -115,12 +126,14 @@
       {
         "type": "label",
         "data": {
-          "text": "- 0.7 Knockback Resistance",
+          "name": "label_07_knockback_resistance",
+          "text": {
+            "fixedValue": "- 0.7 Knockback Resistance"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "- 0.7 Knockback Resistance",
           "x": 141,
           "y": 116
         }
@@ -128,12 +141,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Magicule",
+          "name": "label_magicule",
+          "text": {
+            "fixedValue": "Magicule"
+          },
           "color": {
             "value": -16717607,
             "falpha": 0.0
           },
-          "name": "Magicule",
           "x": 141,
           "y": 125
         }
@@ -141,12 +156,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Random: 3,000 to 5,000",
+          "name": "label_random_3000_to_5000",
+          "text": {
+            "fixedValue": "Random: 3,000 to 5,000"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "Random: 3,000 to 5,000",
           "x": 141,
           "y": 134
         }
@@ -154,12 +171,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Abilities",
+          "name": "label_abilities",
+          "text": {
+            "fixedValue": "Abilities"
+          },
           "color": {
             "value": -16717607,
             "falpha": 0.0
           },
-          "name": "Abilities",
           "x": 141,
           "y": 143
         }
@@ -167,12 +186,14 @@
       {
         "type": "label",
         "data": {
-          "text": "- Axes damage x 1.5",
+          "name": "label_axes_damage_x_15",
+          "text": {
+            "fixedValue": "- Axes damage x 1.5"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "- Axes damage x 1.5",
           "x": 141,
           "y": 152
         }
@@ -180,35 +201,29 @@
       {
         "type": "label",
         "data": {
-          "text": "Evolutions",
+          "name": "label_evolutions",
+          "text": {
+            "fixedValue": "Evolutions"
+          },
           "color": {
             "value": -16717607,
             "falpha": 0.0
           },
-          "name": "Evolutions",
           "x": 141,
           "y": 161
         }
       },
       {
-        "type": "image",
-        "data": {
-          "image": "orctemp.png",
-          "use1Xscale": false,
-          "name": "orctemp.png",
-          "x": 239,
-          "y": 60
-        }
-      },
-      {
         "type": "label",
         "data": {
-          "text": "- High Orc/Orc Lord",
+          "name": "label_high_orcorc_lord",
+          "text": {
+            "fixedValue": "- High Orc/Orc Lord"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "- High Orc/Orc Lord",
           "x": 141,
           "y": 170
         }
@@ -216,14 +231,28 @@
       {
         "type": "button",
         "data": {
+          "name": "button_empty",
           "text": "<",
           "onClick": {
             "name": "FirstGui"
           },
           "width": 30,
           "height": 20,
-          "name": "<",
           "x": 87,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty1",
+          "text": ">",
+          "onClick": {
+            "name": "OpenGoblinRace"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 312,
           "y": 116
         }
       }
@@ -233,7 +262,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

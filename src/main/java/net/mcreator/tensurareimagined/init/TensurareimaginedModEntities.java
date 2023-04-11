@@ -25,14 +25,11 @@ import net.mcreator.tensurareimagined.TensurareimaginedMod;
 public class TensurareimaginedModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, TensurareimaginedMod.MODID);
 	public static final RegistryObject<EntityType<ShlimeEntity>> SHLIME = register("shlime",
-			EntityType.Builder.<ShlimeEntity>of(ShlimeEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(3).setCustomClientFactory(ShlimeEntity::new).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<ShlimeEntity>of(ShlimeEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ShlimeEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<SevererRangedEntity>> SEVERER_RANGED = register("projectile_severer_ranged",
-			EntityType.Builder.<SevererRangedEntity>of(SevererRangedEntity::new, MobCategory.MISC).setCustomClientFactory(SevererRangedEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<SevererbullettestEntity>> SEVERERBULLETTEST = register("severerbullettest",
-			EntityType.Builder.<SevererbullettestEntity>of(SevererbullettestEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SevererbullettestEntity::new).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<SevererRangedEntity>of(SevererRangedEntity::new, MobCategory.MISC).setCustomClientFactory(SevererRangedEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<SevererbullettestEntity>> SEVERERBULLETTEST = register("severerbullettest", EntityType.Builder.<SevererbullettestEntity>of(SevererbullettestEntity::new, MobCategory.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SevererbullettestEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

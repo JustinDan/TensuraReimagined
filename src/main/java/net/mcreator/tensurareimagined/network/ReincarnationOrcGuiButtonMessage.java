@@ -13,6 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.tensurareimagined.world.inventory.ReincarnationOrcGuiMenu;
 import net.mcreator.tensurareimagined.procedures.OrcSelectRaceProcedure;
+import net.mcreator.tensurareimagined.procedures.OpenGoblinRaceProcedure;
 import net.mcreator.tensurareimagined.procedures.FirstGuiProcedure;
 import net.mcreator.tensurareimagined.TensurareimaginedMod;
 
@@ -71,11 +72,14 @@ public class ReincarnationOrcGuiButtonMessage {
 
 			FirstGuiProcedure.execute(world, x, y, z, entity);
 		}
+		if (buttonID == 2) {
+
+			OpenGoblinRaceProcedure.execute(world, x, y, z, entity);
+		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		TensurareimaginedMod.addNetworkMessage(ReincarnationOrcGuiButtonMessage.class, ReincarnationOrcGuiButtonMessage::buffer,
-				ReincarnationOrcGuiButtonMessage::new, ReincarnationOrcGuiButtonMessage::handler);
+		TensurareimaginedMod.addNetworkMessage(ReincarnationOrcGuiButtonMessage.class, ReincarnationOrcGuiButtonMessage::buffer, ReincarnationOrcGuiButtonMessage::new, ReincarnationOrcGuiButtonMessage::handler);
 	}
 }

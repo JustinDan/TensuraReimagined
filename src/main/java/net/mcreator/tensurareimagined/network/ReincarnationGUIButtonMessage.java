@@ -75,7 +75,6 @@ public class ReincarnationGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		TensurareimaginedMod.addNetworkMessage(ReincarnationGUIButtonMessage.class, ReincarnationGUIButtonMessage::buffer,
-				ReincarnationGUIButtonMessage::new, ReincarnationGUIButtonMessage::handler);
+		TensurareimaginedMod.addNetworkMessage(ReincarnationGUIButtonMessage.class, ReincarnationGUIButtonMessage::buffer, ReincarnationGUIButtonMessage::new, ReincarnationGUIButtonMessage::handler);
 	}
 }

@@ -1,0 +1,269 @@
+{
+  "_fv": 39,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 167,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "guibordertest.png",
+          "use1Xscale": false,
+          "x": 127,
+          "y": 38
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select",
+          "text": "Select",
+          "onClick": {
+            "name": "OrcSelectRace"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 186,
+          "y": 206
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_orc",
+          "text": {
+            "fixedValue": "Wight"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_stats",
+          "text": {
+            "fixedValue": "Stats"
+          },
+          "color": {
+            "value": -16717607,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_30_hp",
+          "text": {
+            "fixedValue": "- 20 HP"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_25_attack_damage",
+          "text": {
+            "fixedValue": "- 0.5 Attack Damage"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_35_attack_speed",
+          "text": {
+            "fixedValue": "- Magicule Boost II"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_08_movement_speed",
+          "text": {
+            "fixedValue": "- Sun-weak wihout helmet"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_07_knockback_resistance",
+          "text": {
+            "fixedValue": "- Weak against Mithril/Smite"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magicule",
+          "text": {
+            "fixedValue": "Magicule"
+          },
+          "color": {
+            "value": -16717607,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_random_3000_to_5000",
+          "text": {
+            "fixedValue": "Random: 7,000 to 20,000"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_abilities",
+          "text": {
+            "fixedValue": "Abilities"
+          },
+          "color": {
+            "value": -16717607,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_axes_damage_x_15",
+          "text": {
+            "fixedValue": "- Immune to some potions"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_high_orcorc_lord",
+          "text": {
+            "fixedValue": "- x2 Bow/Crossbow Damage"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "<",
+          "onClick": {
+            "name": "OpenSlimeRace"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 87,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_dont_regenerate_naturally",
+          "text": {
+            "fixedValue": "- Don't regenerate naturally"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 170
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_75_to_lifesteal",
+          "text": {
+            "fixedValue": "- 75% to Life-steal"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 179
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

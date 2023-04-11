@@ -70,7 +70,6 @@ public class SkillMenuMainGuiButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		TensurareimaginedMod.addNetworkMessage(SkillMenuMainGuiButtonMessage.class, SkillMenuMainGuiButtonMessage::buffer,
-				SkillMenuMainGuiButtonMessage::new, SkillMenuMainGuiButtonMessage::handler);
+		TensurareimaginedMod.addNetworkMessage(SkillMenuMainGuiButtonMessage.class, SkillMenuMainGuiButtonMessage::buffer, SkillMenuMainGuiButtonMessage::new, SkillMenuMainGuiButtonMessage::handler);
 	}
 }

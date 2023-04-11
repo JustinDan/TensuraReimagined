@@ -14,7 +14,7 @@ reducedDebugInfo:false
 showSubtitles:false
 directionalAudio:false
 touchscreen:false
-fullscreen:false
+fullscreen:true
 bobView:false
 toggleCrouch:false
 toggleSprint:false
@@ -30,10 +30,10 @@ renderDistance:5
 simulationDistance:12
 entityDistanceScaling:1.0
 guiScale:0
-particles:1
+particles:0
 maxFps:260
-graphicsMode:1
-ao:1
+graphicsMode:0
+ao:0
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"false"
@@ -113,7 +113,7 @@ key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
 key_key.tensurareimagined.skill_menu_open_bind:key.keyboard.b
 key_key.tensurareimagined.use_skill_1:key.keyboard.c
-soundCategory_master:0.04039735
+soundCategory_master:0.17549668
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0

@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Unique Skills",
+          "name": "label_unique_skills",
+          "text": {
+            "fixedValue": "Unique Skills"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Unique Skills",
           "x": 33,
           "y": 26
         }
@@ -26,10 +28,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_analyst",
           "text": "Analyst",
+          "onClick": {
+            "name": "SelectAnalyst"
+          },
           "width": 61,
           "height": 20,
-          "name": "Analyst",
           "x": 42,
           "y": 44
         }
@@ -37,10 +42,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_beserker",
           "text": "Beserker",
+          "onClick": {
+            "name": "SelectBerserker"
+          },
           "width": 67,
           "height": 20,
-          "name": "Beserker",
           "x": 123,
           "y": 44
         }
@@ -48,10 +56,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_degenerate",
           "text": "Degenerate",
+          "onClick": {
+            "name": "SelectDegenerate"
+          },
           "width": 77,
           "height": 20,
-          "name": "Degenerate",
           "x": 213,
           "y": 44
         }
@@ -59,10 +70,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_dilettante",
           "text": "Dilettante",
+          "onClick": {
+            "name": "SelectDilettante"
+          },
           "width": 77,
           "height": 20,
-          "name": "Dilettante",
           "x": 312,
           "y": 44
         }
@@ -70,10 +84,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_envy",
           "text": "Envy",
+          "onClick": {
+            "name": "SelectEvny"
+          },
           "width": 46,
           "height": 20,
-          "name": "Envy",
           "x": 42,
           "y": 80
         }
@@ -81,10 +98,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_generalissimo",
           "text": "Generalissimo",
+          "onClick": {
+            "name": "SelectGeneralissimo"
+          },
           "width": 93,
           "height": 20,
-          "name": "Generalissimo",
           "x": 114,
           "y": 80
         }
@@ -92,10 +112,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_gluttony",
           "text": "Gluttony",
+          "onClick": {
+            "name": "SelectGluttony"
+          },
           "width": 67,
           "height": 20,
-          "name": "Gluttony",
           "x": 231,
           "y": 80
         }
@@ -103,10 +126,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_gourmet",
           "text": "Gourmet",
+          "onClick": {
+            "name": "SelectGourmet"
+          },
           "width": 61,
           "height": 20,
-          "name": "Gourmet",
           "x": 321,
           "y": 80
         }
@@ -114,10 +140,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_godly_craftsman",
           "text": "Godly Craftsman",
+          "onClick": {
+            "name": "SelectGodlyCraftsman"
+          },
           "width": 103,
           "height": 20,
-          "name": "Godly Craftsman",
           "x": 42,
           "y": 116
         }
@@ -125,10 +154,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_great_sage",
           "text": "Great Sage",
+          "onClick": {
+            "name": "SelectGreatSage"
+          },
           "width": 77,
           "height": 20,
-          "name": "Great Sage",
           "x": 168,
           "y": 116
         }
@@ -136,10 +168,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_great_wiseman",
           "text": "Great Wiseman",
+          "onClick": {
+            "name": "SelectGreatWiseman"
+          },
           "width": 93,
           "height": 20,
-          "name": "Great Wiseman",
           "x": 267,
           "y": 116
         }
@@ -147,10 +182,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_greed",
           "text": "Greed",
+          "onClick": {
+            "name": "SelectGreed"
+          },
           "width": 51,
           "height": 20,
-          "name": "Greed",
           "x": 42,
           "y": 152
         }
@@ -158,10 +196,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_healer",
           "text": "Healer",
+          "onClick": {
+            "name": "SelectHealer"
+          },
           "width": 56,
           "height": 20,
-          "name": "Healer",
           "x": 114,
           "y": 152
         }
@@ -169,35 +210,41 @@
       {
         "type": "button",
         "data": {
+          "name": "button_investigator",
           "text": "Investigator",
+          "onClick": {
+            "name": "SelectInvestigator"
+          },
           "width": 88,
           "height": 20,
-          "name": "Investigator",
-          "x": 195,
+          "x": 186,
           "y": 152
         }
       },
       {
         "type": "button",
         "data": {
+          "name": "button_lions_heart",
           "text": "Lion's Heart",
+          "onClick": {
+            "name": "SelectLionsHeart"
+          },
           "width": 87,
           "height": 20,
-          "name": "Lion's Heart",
-          "x": 303,
+          "x": 294,
           "y": 152
         }
       },
       {
         "type": "button",
         "data": {
+          "name": "button_next_page",
           "text": "Next Page",
           "onClick": {
             "name": "OpenUSkill2"
           },
           "width": 72,
           "height": 20,
-          "name": "Next Page",
           "x": 312,
           "y": 188
         }
@@ -205,13 +252,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_1",
           "text": "1",
           "onClick": {
             "name": "SelectSkill1"
           },
           "width": 30,
           "height": 20,
-          "name": "1",
           "x": 150,
           "y": 188
         }
@@ -219,13 +266,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_2",
           "text": "2",
           "onClick": {
             "name": "SelectSkill2"
           },
           "width": 30,
           "height": 20,
-          "name": "2",
           "x": 204,
           "y": 188
         }
@@ -233,13 +280,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_3",
           "text": "3",
           "onClick": {
             "name": "SelectSkill3"
           },
           "width": 30,
           "height": 20,
-          "name": "3",
           "x": 258,
           "y": 188
         }
@@ -247,10 +294,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_clear_skills",
           "text": "Clear Skills",
+          "onClick": {
+            "name": "ClearSkillsButton"
+          },
           "width": 87,
           "height": 20,
-          "name": "Clear Skills",
           "x": 339,
           "y": -1
         }

@@ -1,4 +1,3 @@
-
 package net.mcreator.tensurareimagined.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,9 @@ public class ReincarnationOrcGuiScreen extends AbstractContainerScreen<Reincarna
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_select;
+	Button button_empty;
+	Button button_empty1;
 
 	public ReincarnationOrcGuiScreen(ReincarnationOrcGuiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -56,9 +58,6 @@ public class ReincarnationOrcGuiScreen extends AbstractContainerScreen<Reincarna
 		RenderSystem.setShaderTexture(0, new ResourceLocation("tensurareimagined:textures/screens/guibordertest.png"));
 		this.blit(ms, this.leftPos + 1, this.topPos + 1, 0, 0, 176, 166, 176, 166);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("tensurareimagined:textures/screens/orctemp.png"));
-		this.blit(ms, this.leftPos + 113, this.topPos + 23, 0, 0, 16, 16, 16, 16);
-
 		RenderSystem.disableBlend();
 	}
 
@@ -78,19 +77,19 @@ public class ReincarnationOrcGuiScreen extends AbstractContainerScreen<Reincarna
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Orc", 78, 25, -1);
-		this.font.draw(poseStack, "Stats", 15, 34, -16717607);
-		this.font.draw(poseStack, "- 30 HP", 15, 43, -1);
-		this.font.draw(poseStack, "- 2.5 Attack Damage", 15, 52, -1);
-		this.font.draw(poseStack, "- 3.5 Attack Speed", 15, 61, -1);
-		this.font.draw(poseStack, "- 0.8 Movement Speed", 15, 70, -1);
-		this.font.draw(poseStack, "- 0.7 Knockback Resistance", 15, 79, -1);
-		this.font.draw(poseStack, "Magicule", 15, 88, -16717607);
-		this.font.draw(poseStack, "Random: 3,000 to 5,000", 15, 97, -1);
-		this.font.draw(poseStack, "Abilities", 15, 106, -16717607);
-		this.font.draw(poseStack, "- Axes damage x 1.5", 15, 115, -1);
-		this.font.draw(poseStack, "Evolutions", 15, 124, -16717607);
-		this.font.draw(poseStack, "- High Orc/Orc Lord", 15, 133, -1);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnation_orc_gui.label_orc"), 15, 16, -1);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnation_orc_gui.label_stats"), 15, 34, -16717607);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnation_orc_gui.label_30_hp"), 15, 43, -1);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnation_orc_gui.label_25_attack_damage"), 15, 52, -1);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnation_orc_gui.label_35_attack_speed"), 15, 61, -1);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnation_orc_gui.label_08_movement_speed"), 15, 70, -1);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnation_orc_gui.label_07_knockback_resistance"), 15, 79, -1);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnation_orc_gui.label_magicule"), 15, 88, -16717607);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnation_orc_gui.label_random_3000_to_5000"), 15, 97, -1);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnation_orc_gui.label_abilities"), 15, 106, -16717607);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnation_orc_gui.label_axes_damage_x_15"), 15, 115, -1);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnation_orc_gui.label_evolutions"), 15, 124, -16717607);
+		this.font.draw(poseStack, Component.translatable("gui.tensurareimagined.reincarnation_orc_gui.label_high_orcorc_lord"), 15, 133, -1);
 	}
 
 	@Override
@@ -103,17 +102,29 @@ public class ReincarnationOrcGuiScreen extends AbstractContainerScreen<Reincarna
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 60, this.topPos + 169, 56, 20, Component.literal("Select"), e -> {
+		button_select = new Button(this.leftPos + 60, this.topPos + 169, 56, 20, Component.translatable("gui.tensurareimagined.reincarnation_orc_gui.button_select"), e -> {
 			if (true) {
 				TensurareimaginedMod.PACKET_HANDLER.sendToServer(new ReincarnationOrcGuiButtonMessage(0, x, y, z));
 				ReincarnationOrcGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + -38, this.topPos + 79, 30, 20, Component.literal("<"), e -> {
+		});
+		guistate.put("button:button_select", button_select);
+		this.addRenderableWidget(button_select);
+		button_empty = new Button(this.leftPos + -38, this.topPos + 79, 30, 20, Component.translatable("gui.tensurareimagined.reincarnation_orc_gui.button_empty"), e -> {
 			if (true) {
 				TensurareimaginedMod.PACKET_HANDLER.sendToServer(new ReincarnationOrcGuiButtonMessage(1, x, y, z));
 				ReincarnationOrcGuiButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_empty", button_empty);
+		this.addRenderableWidget(button_empty);
+		button_empty1 = new Button(this.leftPos + 186, this.topPos + 79, 30, 20, Component.translatable("gui.tensurareimagined.reincarnation_orc_gui.button_empty1"), e -> {
+			if (true) {
+				TensurareimaginedMod.PACKET_HANDLER.sendToServer(new ReincarnationOrcGuiButtonMessage(2, x, y, z));
+				ReincarnationOrcGuiButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
+		});
+		guistate.put("button:button_empty1", button_empty1);
+		this.addRenderableWidget(button_empty1);
 	}
 }

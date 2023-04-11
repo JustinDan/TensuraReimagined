@@ -1,0 +1,10 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:old_growth_pine_taiga": "2023-04-10 10:52:41 -0400",
+      "minecraft:beach": "2023-04-10 10:53:16 -0400"
+    },
+    "done": false
+  },
+  "DataVersion": 3120
+}

@@ -58,7 +58,6 @@ public class SkillMenuOpenBindMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		TensurareimaginedMod.addNetworkMessage(SkillMenuOpenBindMessage.class, SkillMenuOpenBindMessage::buffer, SkillMenuOpenBindMessage::new,
-				SkillMenuOpenBindMessage::handler);
+		TensurareimaginedMod.addNetworkMessage(SkillMenuOpenBindMessage.class, SkillMenuOpenBindMessage::buffer, SkillMenuOpenBindMessage::new, SkillMenuOpenBindMessage::handler);
 	}
 }
